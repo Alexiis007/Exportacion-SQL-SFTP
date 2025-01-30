@@ -1,0 +1,120 @@
+INFO - 15/10/2024 04:21:40 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 15/10/2024 04:21:41 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 15/10/2024 04:21:41 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 15/10/2024 04:21:41 p. m.
+Mensaje:  =========================================== 
+DivisionesPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 15/10/2024 04:21:41 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 15/10/2024 04:21:41 p. m.
+Mensaje: ExportToCSV: Tabla 'DivisionesPersonal' exportada a csv con 12 filas
+Detalles: 
+
+INFO - 15/10/2024 04:21:41 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 15/10/2024 04:21:41 p. m.
+Mensaje:  =========================================== 
+Funciones
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 15/10/2024 04:21:41 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 15/10/2024 04:21:41 p. m.
+Mensaje: ExportToCSV: Tabla 'Funciones' exportada a csv con 151 filas
+Detalles: 
+
+INFO - 15/10/2024 04:21:41 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 15/10/2024 04:21:52 p. m.
+Mensaje: ExportToSFTP: El archivo 'C:\Destino\Funciones.csv' fue exportado al SFTP
+Detalles: 
+
+INFO - 15/10/2024 04:21:52 p. m.
+Mensaje: Fecha Termino:  15/10/2024 04:21:52 p. m.
+Detalles: Proceso Terminado
+
+INFO - 15/10/2024 04:22:13 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 15/10/2024 04:22:14 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 15/10/2024 04:22:14 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 15/10/2024 04:22:14 p. m.
+Mensaje:  =========================================== 
+DivisionesPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 15/10/2024 04:22:14 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 15/10/2024 04:22:14 p. m.
+Mensaje: ExportToCSV: Tabla 'DivisionesPersonal' exportada a csv con 12 filas
+Detalles: 
+
+INFO - 15/10/2024 04:22:14 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 15/10/2024 04:22:14 p. m.
+Mensaje:  =========================================== 
+Funciones
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 15/10/2024 04:22:14 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 15/10/2024 04:22:14 p. m.
+Mensaje: ExportToCSV: Tabla 'Funciones' exportada a csv con 151 filas
+Detalles: 
+
+INFO - 15/10/2024 04:22:14 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 15/10/2024 04:22:23 p. m.
+Mensaje: ExportToSFTP: El archivo 'C:\Destino\Funciones.csv' fue exportado al SFTP
+Detalles: 
+
+INFO - 15/10/2024 04:22:23 p. m.
+Mensaje: Fecha Termino:  15/10/2024 04:22:23 p. m.
+Detalles: Proceso Terminado
+
+INFO - 15/10/2024 04:26:25 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 15/10/2024 04:26:25 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+

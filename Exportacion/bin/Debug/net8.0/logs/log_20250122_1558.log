@@ -1,0 +1,56 @@
+INFO - 22/01/2025 03:58:20 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 22/01/2025 03:58:21 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 22/01/2025 03:58:21 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 22/01/2025 03:58:21 p. m.
+Mensaje:  =========================================== 
+dbo.DatosReales
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 22/01/2025 03:58:50 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 22/01/2025 03:58:51 p. m.
+Mensaje: ExportToCSV: Tabla 'dbo.DatosReales' exportada a csv con 295502 filas
+Detalles: 
+
+INFO - 22/01/2025 03:58:51 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 22/01/2025 03:58:51 p. m.
+Mensaje:  =========================================== 
+ dbo.DatosMetas
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 22/01/2025 03:59:20 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 22/01/2025 03:59:21 p. m.
+Mensaje: ExportToCSV: Tabla 'dbo.DatosMetas' exportada a csv con 272640 filas
+Detalles: 
+
+INFO - 22/01/2025 03:59:21 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 22/01/2025 04:00:05 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 22/01/2025 04:00:05 p. m.
+Mensaje: Fecha Termino:  22/01/2025 04:00:05 p. m.
+Detalles: Proceso Terminado
+

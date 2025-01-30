@@ -1,0 +1,38 @@
+INFO - 22/01/2025 03:04:01 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 22/01/2025 03:04:01 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 22/01/2025 03:04:02 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 22/01/2025 03:04:02 p. m.
+Mensaje:  =========================================== 
+Heineken.Empleados
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 22/01/2025 03:08:31 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 22/01/2025 03:08:42 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.Empleados' exportada a csv con 376578 filas
+Detalles: 
+
+INFO - 22/01/2025 03:08:42 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 22/01/2025 03:12:12 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 22/01/2025 03:12:12 p. m.
+Mensaje: Fecha Termino:  22/01/2025 03:12:12 p. m.
+Detalles: Proceso Terminado
+

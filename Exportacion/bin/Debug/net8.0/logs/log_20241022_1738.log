@@ -1,0 +1,70 @@
+INFO - 22/10/2024 05:38:27 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 22/10/2024 05:38:28 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 22/10/2024 05:38:28 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 22/10/2024 05:38:28 p. m.
+Mensaje:  =========================================== 
+DivisionesPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 22/10/2024 05:38:28 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 22/10/2024 05:38:28 p. m.
+Mensaje: ExportToCSV: Tabla 'DivisionesPersonal' exportada a csv con 12 filas
+Detalles: 
+
+INFO - 22/10/2024 05:38:28 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 22/10/2024 05:38:28 p. m.
+Mensaje:  =========================================== 
+Funciones
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 22/10/2024 05:38:28 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 22/10/2024 05:38:28 p. m.
+Mensaje: ExportToCSV: Tabla 'Funciones' exportada a csv con 151 filas
+Detalles: 
+
+INFO - 22/10/2024 05:38:28 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 22/10/2024 05:38:28 p. m.
+Mensaje:  =========================================== 
+ Empleados
+ =========================================== 
+Detalles: Procesando la tabla
+
+ERROR - 22/10/2024 05:38:59 p. m.
+Mensaje: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+Detalles: Error al consultar la tabla
+
+INFO - 22/10/2024 05:38:59 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 22/10/2024 05:39:18 p. m.
+Mensaje: ExportToSFTP: El archivo 'C:\Destino\Funciones.csv' fue exportado al SFTP
+Detalles: 
+
+INFO - 22/10/2024 05:39:18 p. m.
+Mensaje: Fecha Termino:  22/10/2024 05:39:18 p. m.
+Detalles: Proceso Terminado
+

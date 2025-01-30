@@ -1,0 +1,38 @@
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\ModelosExportacion\bin\Debug\net8.0\ModelosExportacion.deps.json
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\ModelosExportacion\bin\Debug\net8.0\ModelosExportacion.dll
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\ModelosExportacion\bin\Debug\net8.0\ModelosExportacion.pdb
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.AssemblyInfoInputs.cache
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.AssemblyInfo.cs
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.csproj.CoreCompileInputs.cache
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.dll
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\refint\ModelosExportacion.dll
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.pdb
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ref\ModelosExportacion.dll
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.csproj.AssemblyReference.cache
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\ModelosExportacion\bin\Debug\net8.0\SFTPService.dll
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\ModelosExportacion\bin\Debug\net8.0\SFTPService.pdb
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosE.D231FB61.Up2Date
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\ModelosExportacion\bin\Debug\net8.0\ModelosExportacion.deps.json
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\ModelosExportacion\bin\Debug\net8.0\ModelosExportacion.dll
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\ModelosExportacion\bin\Debug\net8.0\ModelosExportacion.pdb
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\ModelosExportacion\bin\Debug\net8.0\SFTPService.dll
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\ModelosExportacion\bin\Debug\net8.0\SFTPService.pdb
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.csproj.AssemblyReference.cache
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.AssemblyInfoInputs.cache
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.AssemblyInfo.cs
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.csproj.CoreCompileInputs.cache
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosE.D231FB61.Up2Date
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.dll
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\refint\ModelosExportacion.dll
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.pdb
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ref\ModelosExportacion.dll
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.csproj.AssemblyReference.cache
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.AssemblyInfoInputs.cache
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.AssemblyInfo.cs
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.csproj.CoreCompileInputs.cache
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.dll
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\refint\ModelosExportacion.dll
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.pdb

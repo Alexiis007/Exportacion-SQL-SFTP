@@ -1,0 +1,48 @@
+INFO - 14/10/2024 10:54:41 a. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 14/10/2024 10:54:42 a. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 14/10/2024 10:54:42 a. m.
+Mensaje:  =========================================== 
+Funciones
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 14/10/2024 10:54:42 a. m.
+Mensaje: Exportando tabla a Excel
+Detalles: Exportacion de Informacion a Excel
+
+INFO - 14/10/2024 10:54:44 a. m.
+Mensaje: ExportToExcel: Tabla 'Funciones' exportada a Excel con 151 filas
+Detalles: 
+
+INFO - 14/10/2024 10:54:58 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 14/10/2024 10:54:59 a. m.
+Mensaje:  =========================================== 
+ Empleados
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 14/10/2024 10:54:59 a. m.
+Mensaje: Las tabla contiene: 114800 filas.  Excede el limite permitido :60000. Se filtrara información.
+Detalles: Exceso de información a exportar
+
+INFO - 14/10/2024 10:55:05 a. m.
+Mensaje: Las tabla contiene: 84159 filas.  Excede el limite permitido :60000. Se excluira la tabla del proceso.
+Detalles: Exceso de información a exportar
+
+INFO - 14/10/2024 10:55:06 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 14/10/2024 10:55:06 a. m.
+Mensaje: Fecha Termino:  14/10/2024 10:55:06 a. m.
+Detalles: Proceso Terminado
+

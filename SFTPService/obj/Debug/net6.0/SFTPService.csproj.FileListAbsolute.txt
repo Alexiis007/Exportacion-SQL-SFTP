@@ -1,0 +1,12 @@
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\bin\Debug\net6.0\SFTPService.deps.json
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\bin\Debug\net6.0\SFTPService.dll
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\bin\Debug\net6.0\SFTPService.pdb
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\obj\Debug\net6.0\SFTPService.csproj.AssemblyReference.cache
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\obj\Debug\net6.0\SFTPService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\obj\Debug\net6.0\SFTPService.AssemblyInfoInputs.cache
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\obj\Debug\net6.0\SFTPService.AssemblyInfo.cs
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\obj\Debug\net6.0\SFTPService.csproj.CoreCompileInputs.cache
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\obj\Debug\net6.0\SFTPService.dll
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\obj\Debug\net6.0\refint\SFTPService.dll
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\obj\Debug\net6.0\SFTPService.pdb
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\obj\Debug\net6.0\ref\SFTPService.dll

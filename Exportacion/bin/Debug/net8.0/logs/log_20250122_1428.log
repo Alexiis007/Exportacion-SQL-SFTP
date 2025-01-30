@@ -1,0 +1,26 @@
+INFO - 22/01/2025 02:28:42 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 22/01/2025 02:28:43 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 22/01/2025 02:28:43 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 22/01/2025 02:28:43 p. m.
+Mensaje:  =========================================== 
+Heineken.SalarioNomina
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 22/01/2025 02:28:43 p. m.
+Mensaje: Las tabla contiene: 180339 filas.  Excede el limite permitido :150000. Se filtrara información.
+Detalles: Exceso de información a exportar
+
+INFO - 22/01/2025 02:31:18 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+

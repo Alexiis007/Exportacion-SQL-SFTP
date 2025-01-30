@@ -1,0 +1,128 @@
+INFO - 23/01/2025 05:42:20 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 23/01/2025 05:42:21 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 23/01/2025 05:42:21 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 23/01/2025 05:42:21 p. m.
+Mensaje:  =========================================== 
+Heineken.Sociedades
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 23/01/2025 05:42:21 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 23/01/2025 05:42:21 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.Sociedades' exportada a csv con 12 filas
+Detalles: 
+
+INFO - 23/01/2025 05:42:21 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 23/01/2025 05:42:21 p. m.
+Mensaje:  =========================================== 
+ Heineken.DivisionesPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 23/01/2025 05:42:21 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 23/01/2025 05:42:21 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.DivisionesPersonal' exportada a csv con 12 filas
+Detalles: 
+
+INFO - 23/01/2025 05:42:21 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 23/01/2025 05:42:21 p. m.
+Mensaje:  =========================================== 
+ Heineken.Empleados
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 23/01/2025 05:42:47 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 23/01/2025 05:42:48 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 23/01/2025 05:42:48 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 23/01/2025 05:42:48 p. m.
+Mensaje:  =========================================== 
+Heineken.Sociedades
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 23/01/2025 05:42:48 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 23/01/2025 05:42:48 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.Sociedades' exportada a csv con 12 filas
+Detalles: 
+
+INFO - 23/01/2025 05:42:48 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 23/01/2025 05:42:48 p. m.
+Mensaje:  =========================================== 
+ Heineken.DivisionesPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 23/01/2025 05:42:49 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 23/01/2025 05:42:49 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.DivisionesPersonal' exportada a csv con 12 filas
+Detalles: 
+
+INFO - 23/01/2025 05:42:49 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 23/01/2025 05:42:49 p. m.
+Mensaje:  =========================================== 
+ Heineken.AreasPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 23/01/2025 05:42:49 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 23/01/2025 05:42:49 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.AreasPersonal' exportada a csv con 357 filas
+Detalles: 
+
+INFO - 23/01/2025 05:42:49 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 23/01/2025 05:42:55 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 23/01/2025 05:42:55 p. m.
+Mensaje: Fecha Termino:  23/01/2025 05:42:55 p. m.
+Detalles: Proceso Terminado
+

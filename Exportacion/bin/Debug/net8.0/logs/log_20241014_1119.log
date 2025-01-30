@@ -1,0 +1,40 @@
+INFO - 14/10/2024 11:19:23 a. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 14/10/2024 11:19:24 a. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 14/10/2024 11:19:24 a. m.
+Mensaje:  =========================================== 
+Funciones
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 14/10/2024 11:19:24 a. m.
+Mensaje: Exportando tabla a Excel
+Detalles: Exportacion de Informacion a Excel
+
+INFO - 14/10/2024 11:19:25 a. m.
+Mensaje: ExportToExcel: Tabla 'Funciones' exportada a Excel con 151 filas
+Detalles: 
+
+INFO - 14/10/2024 11:19:32 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 14/10/2024 11:19:32 a. m.
+Mensaje:  =========================================== 
+ Empleados
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 14/10/2024 11:19:43 a. m.
+Mensaje: Exportando tabla a Excel
+Detalles: Exportacion de Informacion a Excel
+
+INFO - 14/10/2024 11:20:07 a. m.
+Mensaje: ExportToExcel: Tabla 'Empleados' exportada a Excel con 114800 filas
+Detalles: 
+

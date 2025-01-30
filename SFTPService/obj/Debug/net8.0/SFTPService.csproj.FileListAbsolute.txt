@@ -1,0 +1,48 @@
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\bin\Debug\net8.0\SFTPService.deps.json
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\bin\Debug\net8.0\SFTPService.dll
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\bin\Debug\net8.0\SFTPService.pdb
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\obj\Debug\net8.0\SFTPService.csproj.AssemblyReference.cache
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\obj\Debug\net8.0\SFTPService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\obj\Debug\net8.0\SFTPService.AssemblyInfoInputs.cache
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\obj\Debug\net8.0\SFTPService.AssemblyInfo.cs
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\obj\Debug\net8.0\SFTPService.csproj.CoreCompileInputs.cache
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\obj\Debug\net8.0\SFTPService.dll
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\obj\Debug\net8.0\refint\SFTPService.dll
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\obj\Debug\net8.0\SFTPService.pdb
+C:\Users\dalmiray\Documents\SOINF\HNK\sftptogo-examples-main\sftptogo-examples-main\dotnet\src\SFTPService\obj\Debug\net8.0\ref\SFTPService.dll
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\SFTPService\bin\Debug\net8.0\SFTPService.deps.json
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\SFTPService\bin\Debug\net8.0\SFTPService.dll
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\SFTPService\bin\Debug\net8.0\SFTPService.pdb
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.csproj.AssemblyReference.cache
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.AssemblyInfoInputs.cache
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.AssemblyInfo.cs
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.csproj.CoreCompileInputs.cache
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.dll
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\refint\SFTPService.dll
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.pdb
+C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\ref\SFTPService.dll
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\SFTPService\bin\Debug\net8.0\SFTPService.deps.json
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\SFTPService\bin\Debug\net8.0\SFTPService.dll
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\SFTPService\bin\Debug\net8.0\SFTPService.pdb
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.csproj.AssemblyReference.cache
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.AssemblyInfoInputs.cache
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.AssemblyInfo.cs
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.csproj.CoreCompileInputs.cache
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.dll
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\refint\SFTPService.dll
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.pdb
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\ref\SFTPService.dll
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\SFTPService\bin\Debug\net8.0\SFTPService.deps.json
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\SFTPService\bin\Debug\net8.0\SFTPService.dll
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\SFTPService\bin\Debug\net8.0\SFTPService.pdb
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.csproj.AssemblyReference.cache
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.AssemblyInfoInputs.cache
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.AssemblyInfo.cs
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.csproj.CoreCompileInputs.cache
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.dll
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\refint\SFTPService.dll
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\SFTPService.pdb
+C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\SFTPService\obj\Debug\net8.0\ref\SFTPService.dll

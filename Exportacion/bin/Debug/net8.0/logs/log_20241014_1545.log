@@ -1,0 +1,124 @@
+INFO - 14/10/2024 03:45:03 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 14/10/2024 03:45:05 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 14/10/2024 03:45:05 p. m.
+Mensaje:  =========================================== 
+DivisionesPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 14/10/2024 03:45:05 p. m.
+Mensaje: Exportando tabla a Excel
+Detalles: Exportacion de Informacion a Excel
+
+INFO - 14/10/2024 03:45:07 p. m.
+Mensaje: ExportToExcel: Tabla 'DivisionesPersonal' exportada a Excel con 12 filas
+Detalles: 
+
+INFO - 14/10/2024 03:45:07 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 14/10/2024 03:45:07 p. m.
+Mensaje:  =========================================== 
+ Funciones
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 14/10/2024 03:45:07 p. m.
+Mensaje: Exportando tabla a Excel
+Detalles: Exportacion de Informacion a Excel
+
+INFO - 14/10/2024 03:45:07 p. m.
+Mensaje: ExportToExcel: Tabla 'Funciones' exportada a Excel con 151 filas
+Detalles: 
+
+INFO - 14/10/2024 03:45:07 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 14/10/2024 03:45:07 p. m.
+Mensaje:  =========================================== 
+ Ausentismos
+ =========================================== 
+Detalles: Procesando la tabla
+
+ERROR - 14/10/2024 03:45:07 p. m.
+Mensaje: La tabla no existe
+Detalles: Error al consultar la tabla
+
+INFO - 14/10/2024 03:45:07 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 14/10/2024 03:45:07 p. m.
+Mensaje: Fecha Termino:  14/10/2024 03:45:07 p. m.
+Detalles: Proceso Terminado
+
+INFO - 14/10/2024 03:49:12 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 14/10/2024 03:49:12 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 14/10/2024 03:49:12 p. m.
+Mensaje:  =========================================== 
+DivisionesPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 14/10/2024 03:49:12 p. m.
+Mensaje: Exportando tabla a Excel
+Detalles: Exportacion de Informacion a Excel
+
+INFO - 14/10/2024 03:49:13 p. m.
+Mensaje: ExportToExcel: Tabla 'DivisionesPersonal' exportada a Excel con 12 filas
+Detalles: 
+
+INFO - 14/10/2024 03:49:13 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 14/10/2024 03:49:13 p. m.
+Mensaje:  =========================================== 
+ Funciones
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 14/10/2024 03:49:13 p. m.
+Mensaje: Exportando tabla a Excel
+Detalles: Exportacion de Informacion a Excel
+
+INFO - 14/10/2024 03:49:13 p. m.
+Mensaje: ExportToExcel: Tabla 'Funciones' exportada a Excel con 151 filas
+Detalles: 
+
+INFO - 14/10/2024 03:49:13 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 14/10/2024 03:49:13 p. m.
+Mensaje:  =========================================== 
+ Ausentismos
+ =========================================== 
+Detalles: Procesando la tabla
+
+ERROR - 14/10/2024 03:49:13 p. m.
+Mensaje: La tabla no existe
+Detalles: Error al consultar la tabla
+
+INFO - 14/10/2024 03:49:13 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 14/10/2024 03:49:13 p. m.
+Mensaje: Fecha Termino:  14/10/2024 03:49:13 p. m.
+Detalles: Proceso Terminado
+

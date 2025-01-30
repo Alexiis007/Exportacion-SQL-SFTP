@@ -1,0 +1,144 @@
+INFO - 14/10/2024 11:24:50 a. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 14/10/2024 11:24:51 a. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 14/10/2024 11:24:51 a. m.
+Mensaje:  =========================================== 
+Funciones
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 14/10/2024 11:24:51 a. m.
+Mensaje: Exportando tabla a Excel
+Detalles: Exportacion de Informacion a Excel
+
+INFO - 14/10/2024 11:24:51 a. m.
+Mensaje: ExportToExcel: Tabla 'Funciones' exportada a Excel con 151 filas
+Detalles: 
+
+INFO - 14/10/2024 11:24:51 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 14/10/2024 11:24:51 a. m.
+Mensaje:  =========================================== 
+ Empleados
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 14/10/2024 11:24:59 a. m.
+Mensaje: Exportando tabla a Excel
+Detalles: Exportacion de Informacion a Excel
+
+INFO - 14/10/2024 11:25:16 a. m.
+Mensaje: ExportToExcel: Tabla 'Empleados' exportada a Excel con 114800 filas
+Detalles: 
+
+INFO - 14/10/2024 11:25:16 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 14/10/2024 11:25:16 a. m.
+Mensaje: Fecha Termino:  14/10/2024 11:25:16 a. m.
+Detalles: Proceso Terminado
+
+INFO - 14/10/2024 11:30:21 a. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 14/10/2024 11:30:21 a. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 14/10/2024 11:30:21 a. m.
+Mensaje:  =========================================== 
+Funciones
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 14/10/2024 11:30:21 a. m.
+Mensaje: Exportando tabla a Excel
+Detalles: Exportacion de Informacion a Excel
+
+INFO - 14/10/2024 11:30:21 a. m.
+Mensaje: ExportToExcel: Tabla 'Funciones' exportada a Excel con 151 filas
+Detalles: 
+
+INFO - 14/10/2024 11:30:21 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 14/10/2024 11:30:21 a. m.
+Mensaje:  =========================================== 
+ Empleados
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 14/10/2024 11:30:31 a. m.
+Mensaje: Exportando tabla a Excel
+Detalles: Exportacion de Informacion a Excel
+
+INFO - 14/10/2024 11:30:57 a. m.
+Mensaje: ExportToExcel: Tabla 'Empleados' exportada a Excel con 114800 filas
+Detalles: 
+
+INFO - 14/10/2024 11:30:57 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 14/10/2024 11:30:57 a. m.
+Mensaje: Fecha Termino:  14/10/2024 11:30:57 a. m.
+Detalles: Proceso Terminado
+
+INFO - 14/10/2024 11:34:34 a. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 14/10/2024 11:34:34 a. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 14/10/2024 11:34:34 a. m.
+Mensaje:  =========================================== 
+Funciones
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 14/10/2024 11:34:34 a. m.
+Mensaje: Exportando tabla a Excel
+Detalles: Exportacion de Informacion a Excel
+
+INFO - 14/10/2024 11:34:34 a. m.
+Mensaje: ExportToExcel: Tabla 'Funciones' exportada a Excel con 151 filas
+Detalles: 
+
+INFO - 14/10/2024 11:34:34 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 14/10/2024 11:34:34 a. m.
+Mensaje:  =========================================== 
+ Empleados
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 14/10/2024 11:34:40 a. m.
+Mensaje: Exportando tabla a Excel
+Detalles: Exportacion de Informacion a Excel
+
+INFO - 14/10/2024 11:34:59 a. m.
+Mensaje: ExportToExcel: Tabla 'Empleados' exportada a Excel con 114800 filas
+Detalles: 
+
+INFO - 14/10/2024 11:34:59 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 14/10/2024 11:34:59 a. m.
+Mensaje: Fecha Termino:  14/10/2024 11:34:59 a. m.
+Detalles: Proceso Terminado
+

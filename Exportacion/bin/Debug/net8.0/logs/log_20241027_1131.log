@@ -1,0 +1,84 @@
+INFO - 27/10/2024 11:31:59 a. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 27/10/2024 11:32:00 a. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 27/10/2024 11:32:00 a. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 27/10/2024 11:32:00 a. m.
+Mensaje:  =========================================== 
+DivisionesPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 27/10/2024 11:32:00 a. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 27/10/2024 11:32:00 a. m.
+Mensaje: ExportToCSV: Tabla 'DivisionesPersonal' exportada a csv con 12 filas
+Detalles: 
+
+INFO - 27/10/2024 11:32:00 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 27/10/2024 11:32:00 a. m.
+Mensaje:  =========================================== 
+Funciones
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 27/10/2024 11:32:00 a. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 27/10/2024 11:32:00 a. m.
+Mensaje: ExportToCSV: Tabla 'Funciones' exportada a csv con 151 filas
+Detalles: 
+
+INFO - 27/10/2024 11:32:00 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 27/10/2024 11:32:00 a. m.
+Mensaje:  =========================================== 
+ Ausentismos
+ =========================================== 
+Detalles: Procesando la tabla
+
+ERROR - 27/10/2024 11:32:00 a. m.
+Mensaje: La tabla no existe
+Detalles: Error al consultar la tabla
+
+INFO - 27/10/2024 11:32:00 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 27/10/2024 11:32:00 a. m.
+Mensaje:  =========================================== 
+ CentrosCosto
+ =========================================== 
+Detalles: Procesando la tabla
+
+ERROR - 27/10/2024 11:32:00 a. m.
+Mensaje: No hay datos
+Detalles: 
+
+INFO - 27/10/2024 11:32:01 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 27/10/2024 11:32:11 a. m.
+Mensaje: ExportToSFTP: El archivo 'C:\Destino\Funciones.csv' fue exportado al SFTP
+Detalles: 
+
+INFO - 27/10/2024 11:32:11 a. m.
+Mensaje: Fecha Termino:  27/10/2024 11:32:11 a. m.
+Detalles: Proceso Terminado
+

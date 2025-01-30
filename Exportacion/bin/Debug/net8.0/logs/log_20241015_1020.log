@@ -1,0 +1,66 @@
+INFO - 15/10/2024 10:20:10 a. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 15/10/2024 10:20:11 a. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 15/10/2024 10:20:11 a. m.
+Mensaje:  =========================================== 
+DivisionesPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 15/10/2024 10:20:11 a. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 15/10/2024 10:20:15 a. m.
+Mensaje: ExportToCSV: Tabla 'DivisionesPersonal' exportada a csv con 12 filas
+Detalles: 
+
+INFO - 15/10/2024 10:20:20 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 15/10/2024 10:20:20 a. m.
+Mensaje:  =========================================== 
+Funciones
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 15/10/2024 10:20:20 a. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 15/10/2024 10:20:20 a. m.
+Mensaje: ExportToCSV: Error - La tabla 'Funciones' no fue exportada Excel verifica la Ruta.
+The stream is currently in use by a previous operation on the stream.
+Detalles:    at System.IO.StreamWriter.ThrowAsyncIOInProgress()
+   at System.IO.StreamWriter.Dispose(Boolean disposing)
+   at System.IO.TextWriter.Dispose()
+   at ModelosExportacion.Funciones.ExportCSV(DataTable tabla, String NombreTabla, String RutaDestino) in C:\Users\dalmiray\Documents\SOINF\HNK\Exportacion\Exportacion\ModelosExportacion\Funciones.cs:line 243
+
+INFO - 15/10/2024 10:20:20 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 15/10/2024 10:20:20 a. m.
+Mensaje:  =========================================== 
+ Empleados
+ =========================================== 
+Detalles: Procesando la tabla
+
+ERROR - 15/10/2024 10:20:51 a. m.
+Mensaje: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+Detalles: Error al consultar la tabla
+
+INFO - 15/10/2024 10:20:51 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 15/10/2024 10:20:51 a. m.
+Mensaje: Fecha Termino:  15/10/2024 10:20:51 a. m.
+Detalles: Proceso Terminado
+

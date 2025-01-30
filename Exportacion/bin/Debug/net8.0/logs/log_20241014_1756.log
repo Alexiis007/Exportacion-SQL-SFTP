@@ -1,0 +1,22 @@
+INFO - 14/10/2024 05:56:05 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 14/10/2024 05:56:06 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 14/10/2024 05:56:06 p. m.
+Mensaje:  =========================================== 
+DivisionesPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 14/10/2024 05:56:07 p. m.
+Mensaje: Exportando tabla a Excel
+Detalles: Exportacion de Informacion a Excel
+
+INFO - 14/10/2024 05:56:07 p. m.
+Mensaje: ExportToExcel: Tabla 'DivisionesPersonal' exportada a Excel con 12 filas
+Detalles: 
+

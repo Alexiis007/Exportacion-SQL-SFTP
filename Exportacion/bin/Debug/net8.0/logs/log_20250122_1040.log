@@ -1,0 +1,56 @@
+INFO - 22/01/2025 10:40:48 a. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 22/01/2025 10:40:49 a. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 22/01/2025 10:40:49 a. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 22/01/2025 10:40:49 a. m.
+Mensaje:  =========================================== 
+Heineken.AreasPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 22/01/2025 10:40:50 a. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 22/01/2025 10:40:50 a. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.AreasPersonal' exportada a csv con 357 filas
+Detalles: 
+
+INFO - 22/01/2025 10:40:50 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 22/01/2025 10:40:50 a. m.
+Mensaje:  =========================================== 
+Heineken.AbsentismosNomina
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 22/01/2025 10:41:09 a. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 22/01/2025 10:41:10 a. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.AbsentismosNomina' exportada a csv con 83825 filas
+Detalles: 
+
+INFO - 22/01/2025 10:41:10 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 22/01/2025 10:41:43 a. m.
+Mensaje: 
+Detalles: 
+
+INFO - 22/01/2025 10:41:43 a. m.
+Mensaje: Fecha Termino:  22/01/2025 10:41:43 a. m.
+Detalles: Proceso Terminado
+

@@ -1,0 +1,74 @@
+INFO - 15/10/2024 06:15:02 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 15/10/2024 06:15:02 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 15/10/2024 06:15:02 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 15/10/2024 06:15:02 p. m.
+Mensaje:  =========================================== 
+DivisionesPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 15/10/2024 06:15:02 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 15/10/2024 06:15:02 p. m.
+Mensaje: ExportToCSV: Tabla 'DivisionesPersonal' exportada a csv con 12 filas
+Detalles: 
+
+INFO - 15/10/2024 06:15:02 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 15/10/2024 06:15:02 p. m.
+Mensaje:  =========================================== 
+Funciones
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 15/10/2024 06:15:02 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 15/10/2024 06:15:02 p. m.
+Mensaje: ExportToCSV: Tabla 'Funciones' exportada a csv con 151 filas
+Detalles: 
+
+INFO - 15/10/2024 06:15:02 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 15/10/2024 06:15:02 p. m.
+Mensaje:  =========================================== 
+ Empleados
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 15/10/2024 06:15:09 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 15/10/2024 06:15:10 p. m.
+Mensaje: ExportToCSV: Tabla 'Empleados' exportada a csv con 145500 filas
+Detalles: 
+
+INFO - 15/10/2024 06:15:10 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 15/10/2024 06:16:28 p. m.
+Mensaje: ExportToSFTP: El archivo 'C:\Destino\Funciones.csv' fue exportado al SFTP
+Detalles: 
+
+INFO - 15/10/2024 06:16:28 p. m.
+Mensaje: Fecha Termino:  15/10/2024 06:16:28 p. m.
+Detalles: Proceso Terminado
+

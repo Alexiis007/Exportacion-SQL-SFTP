@@ -1,0 +1,38 @@
+INFO - 23/01/2025 03:45:03 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 23/01/2025 03:45:05 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 23/01/2025 03:45:05 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 23/01/2025 03:45:05 p. m.
+Mensaje:  =========================================== 
+Heineken.Sociedades
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 23/01/2025 03:45:06 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 23/01/2025 03:45:06 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.Sociedades' exportada a csv con 12 filas
+Detalles: 
+
+INFO - 23/01/2025 03:45:06 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 23/01/2025 03:45:14 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 23/01/2025 03:45:14 p. m.
+Mensaje: Fecha Termino:  23/01/2025 03:45:14 p. m.
+Detalles: Proceso Terminado
+

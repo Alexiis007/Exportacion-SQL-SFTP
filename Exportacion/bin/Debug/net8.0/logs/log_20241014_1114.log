@@ -1,0 +1,44 @@
+INFO - 14/10/2024 11:14:14 a. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 14/10/2024 11:14:15 a. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 14/10/2024 11:14:15 a. m.
+Mensaje:  =========================================== 
+Funciones
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 14/10/2024 11:14:16 a. m.
+Mensaje: Exportando tabla a Excel
+Detalles: Exportacion de Informacion a Excel
+
+INFO - 14/10/2024 11:14:17 a. m.
+Mensaje: ExportToExcel: Tabla 'Funciones' exportada a Excel con 151 filas
+Detalles: 
+
+INFO - 14/10/2024 11:14:29 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 14/10/2024 11:14:29 a. m.
+Mensaje:  =========================================== 
+ Empleados
+ =========================================== 
+Detalles: Procesando la tabla
+
+ERROR - 14/10/2024 11:15:21 a. m.
+Mensaje: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+Detalles: 
+
+INFO - 14/10/2024 11:15:21 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 14/10/2024 11:15:21 a. m.
+Mensaje: Fecha Termino:  14/10/2024 11:15:21 a. m.
+Detalles: Proceso Terminado
+

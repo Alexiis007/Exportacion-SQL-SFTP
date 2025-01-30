@@ -1,0 +1,82 @@
+INFO - 24/01/2025 10:20:12 a. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 24/01/2025 10:20:13 a. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 24/01/2025 10:20:13 a. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 24/01/2025 10:20:13 a. m.
+Mensaje:  =========================================== 
+Heineken.Sociedades
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 24/01/2025 10:20:14 a. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 24/01/2025 10:20:14 a. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.Sociedades' exportada a csv con 12 filas
+Detalles: 
+
+INFO - 24/01/2025 10:20:14 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 24/01/2025 10:20:14 a. m.
+Mensaje:  =========================================== 
+ Heineken.DivisionesPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 24/01/2025 10:20:14 a. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 24/01/2025 10:20:14 a. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.DivisionesPersonal' exportada a csv con 12 filas
+Detalles: 
+
+INFO - 24/01/2025 10:20:14 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 24/01/2025 10:20:14 a. m.
+Mensaje:  =========================================== 
+ Heineken.AreasPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 24/01/2025 10:20:14 a. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 24/01/2025 10:20:14 a. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.AreasPersonal' exportada a csv con 357 filas
+Detalles: 
+
+INFO - 24/01/2025 10:20:14 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 24/01/2025 10:20:30 a. m.
+Mensaje: 
+Detalles: 
+
+INFO - 24/01/2025 10:20:30 a. m.
+Mensaje: 
+Detalles: 
+
+INFO - 24/01/2025 10:20:30 a. m.
+Mensaje: 
+Detalles: 
+
+INFO - 24/01/2025 10:20:30 a. m.
+Mensaje: Fecha Termino:  24/01/2025 10:20:30 a. m.
+Detalles: Proceso Terminado
+
