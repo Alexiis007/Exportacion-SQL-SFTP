@@ -1,0 +1,22 @@
+INFO - 30/01/2025 02:11:42 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 30/01/2025 02:11:43 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 30/01/2025 02:11:43 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 30/01/2025 02:11:43 p. m.
+Mensaje:  =========================================== 
+Heineken.SalarioNomina
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 30/01/2025 02:12:51 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+

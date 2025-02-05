@@ -285,23 +285,23 @@ namespace ModelosExportacion
                     }
 
                     RespuestaInterna ICMMNFHeinekenQA = new RespuestaInterna();
-                    //RespuestaInterna ICMCOMHeinekenQA = new RespuestaInterna();
-                    //RespuestaInterna ICMCOMCatorcenalHeinekenQA = new RespuestaInterna();
+                    RespuestaInterna ICMCOMHeinekenQA = new RespuestaInterna();
+                    RespuestaInterna ICMCOMCatorcenalHeinekenQA = new RespuestaInterna();
 
                     ICMMNFHeinekenQA = await Funciones.ExportarFTP(ubiRutaCarpetaLocal, ubiRutaCarpetaDestino, ICMMNFHeinekenQA_SFTP, "ICMMNFHeinekenQA_Tablas");
-                    //ICMCOMHeinekenQA = await Funciones.ExportarFTP(ubiRutaCarpetaLocal, ubiRutaCarpetaDestino, ICMCOMHeinekenQA_SFTP, "ICMCOMHeinekenQA_Tablas");
-                    //ICMCOMCatorcenalHeinekenQA = await Funciones.ExportarFTP(ubiRutaCarpetaLocal, ubiRutaCarpetaDestino, ICMCOMCatorcenalHeinekenQA_SFTP, "ICMCOMCatorcenalHeinekenQA_Tablas");
+                    ICMCOMHeinekenQA = await Funciones.ExportarFTP(ubiRutaCarpetaLocal, ubiRutaCarpetaDestino, ICMCOMHeinekenQA_SFTP, "ICMCOMHeinekenQA_Tablas");
+                    ICMCOMCatorcenalHeinekenQA = await Funciones.ExportarFTP(ubiRutaCarpetaLocal, ubiRutaCarpetaDestino, ICMCOMCatorcenalHeinekenQA_SFTP, "ICMCOMCatorcenalHeinekenQA_Tablas");
 
 
                     Console.WriteLine(ICMMNFHeinekenQA.mensaje);
                     log.Escribe(ICMMNFHeinekenQA.correcto ? LogType.INFO  : LogType.ERROR, ICMMNFHeinekenQA.mensaje, ICMMNFHeinekenQA.detalle);
                     Console.WriteLine("===========================================");
-                    //Console.WriteLine(ICMCOMHeinekenQA.mensaje);
-                    //log.Escribe(ICMCOMHeinekenQA.correcto ? LogType.INFO : LogType.ERROR, ICMCOMHeinekenQA.mensaje, ICMCOMHeinekenQA.detalle);
-                    //Console.WriteLine("===========================================");
-                    //Console.WriteLine(ICMCOMCatorcenalHeinekenQA.mensaje);
-                    //log.Escribe(ICMCOMCatorcenalHeinekenQA.correcto ? LogType.INFO : LogType.ERROR, ICMCOMCatorcenalHeinekenQA.mensaje, ICMCOMCatorcenalHeinekenQA.detalle);
-                    //Console.WriteLine("===========================================");
+                    Console.WriteLine(ICMCOMHeinekenQA.mensaje);
+                    log.Escribe(ICMCOMHeinekenQA.correcto ? LogType.INFO : LogType.ERROR, ICMCOMHeinekenQA.mensaje, ICMCOMHeinekenQA.detalle);
+                    Console.WriteLine("===========================================");
+                    Console.WriteLine(ICMCOMCatorcenalHeinekenQA.mensaje);
+                    log.Escribe(ICMCOMCatorcenalHeinekenQA.correcto ? LogType.INFO : LogType.ERROR, ICMCOMCatorcenalHeinekenQA.mensaje, ICMCOMCatorcenalHeinekenQA.detalle);
+                    Console.WriteLine("===========================================");
                 }
                 else
                 {

@@ -1,0 +1,62 @@
+INFO - 30/01/2025 02:37:34 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 30/01/2025 02:37:35 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 30/01/2025 02:37:35 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 30/01/2025 02:37:35 p. m.
+Mensaje:  =========================================== 
+Heineken.SalarioNomina
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 30/01/2025 02:39:22 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 30/01/2025 02:39:33 p. m.
+Mensaje: ExportToCSV: Error - La tabla 'Heineken.SalarioNomina'.
+The process cannot access the file 'C:\Destino\Heineken.SalarioNomina.csv' because it is being used by another process.
+Detalles:    at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.StreamWriter.ValidateArgsAndOpenPath(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path)
+   at ModelosExportacion.Funciones.ExportCSV(DataTable tabla, String NombreTabla, String RutaDestino) in C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\Funciones.cs:line 282
+
+INFO - 30/01/2025 02:39:33 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 30/01/2025 02:39:33 p. m.
+Mensaje:  =========================================== 
+ dbo.ResultadosJefesEmpleadosEquiposMensual
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 30/01/2025 02:39:33 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 30/01/2025 02:39:34 p. m.
+Mensaje: ExportToCSV: Error - La tabla 'dbo.ResultadosJefesEmpleadosEquiposMensual'.
+The process cannot access the file 'C:\Destino\dbo.ResultadosJefesEmpleadosEquiposMensual.csv' because it is being used by another process.
+Detalles:    at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.StreamWriter.ValidateArgsAndOpenPath(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path)
+   at ModelosExportacion.Funciones.ExportCSV(DataTable tabla, String NombreTabla, String RutaDestino) in C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\Funciones.cs:line 282
+
+INFO - 30/01/2025 02:39:34 p. m.
+Mensaje:  ===========================================
+Detalles: 
+

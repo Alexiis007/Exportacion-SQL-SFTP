@@ -1,0 +1,43 @@
+INFO - 31/01/2025 04:23:43 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 31/01/2025 04:23:44 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 31/01/2025 04:23:44 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 31/01/2025 04:23:44 p. m.
+Mensaje:  =========================================== 
+Heineken.SalarioNomina
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 31/01/2025 04:25:50 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 31/01/2025 04:25:53 p. m.
+Mensaje: ExportToCSV: Error - La tabla 'Heineken.SalarioNomina'.
+Access to the path 'C:\Destino' is denied.
+Detalles:    at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.File.OpenHandle(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.File.WriteToFile(String path, FileMode mode, String contents, Encoding encoding)
+   at ModelosExportacion.Funciones.ExportCSV(DataTable tabla, String NombreTabla, String RutaDestino) in C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\Funciones.cs:line 268
+
+INFO - 31/01/2025 04:25:53 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 31/01/2025 04:25:53 p. m.
+Mensaje: Proceso exitoso!
+Detalles: 
+
+INFO - 31/01/2025 04:25:53 p. m.
+Mensaje: Fecha Termino:  31/01/2025 04:25:53 p. m.
+Detalles: Proceso Terminado
+

@@ -1,0 +1,38 @@
+INFO - 31/01/2025 03:26:49 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 31/01/2025 03:26:50 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 31/01/2025 03:26:50 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 31/01/2025 03:26:50 p. m.
+Mensaje:  =========================================== 
+Heineken.SalarioNomina
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 31/01/2025 03:27:51 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 31/01/2025 03:27:51 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.SalarioNomina' exportada a csv con 180339 filas
+Detalles: 
+
+INFO - 31/01/2025 03:27:51 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 31/01/2025 03:27:55 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 31/01/2025 03:27:55 p. m.
+Mensaje: Fecha Termino:  31/01/2025 03:27:55 p. m.
+Detalles: Proceso Terminado
+

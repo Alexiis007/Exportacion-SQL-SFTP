@@ -1,0 +1,43 @@
+INFO - 30/01/2025 01:31:58 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 30/01/2025 01:31:59 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 30/01/2025 01:31:59 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 30/01/2025 01:31:59 p. m.
+Mensaje:  =========================================== 
+Heineken.SalarioNomina
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 30/01/2025 01:33:06 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 30/01/2025 01:33:10 p. m.
+Mensaje: ExportToCSV: Error - La tabla 'Heineken.SalarioNomina'.
+The parameter is incorrect. : 'C:\Destino\Heineken.SalarioNomina.csv'
+Detalles:    at System.IO.Enumeration.FileSystemEnumerator`1.FindNextEntry()
+   at System.IO.Enumeration.FileSystemEnumerator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.IO.Directory.GetFiles(String path, String searchPattern, EnumerationOptions enumerationOptions)
+   at ModelosExportacion.Funciones.ExportCSV(DataTable tabla, String NombreTabla, String RutaDestino) in C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\Funciones.cs:line 254
+
+INFO - 30/01/2025 01:33:10 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 30/01/2025 01:34:54 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 30/01/2025 01:34:54 p. m.
+Mensaje: Fecha Termino:  30/01/2025 01:34:54 p. m.
+Detalles: Proceso Terminado
+

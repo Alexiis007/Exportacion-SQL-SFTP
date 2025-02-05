@@ -1,0 +1,73 @@
+INFO - 30/01/2025 03:21:02 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 30/01/2025 03:21:03 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+ERROR - 30/01/2025 03:21:03 p. m.
+Mensaje: Error limpieza directorio
+Detalles: Error al hacer la limpieza del directorio C:\Destino
+The process cannot access the file 'C:\Destino\Heineken.SalarioNomina.csv' because it is being used by another process.
+
+INFO - 30/01/2025 03:21:03 p. m.
+Mensaje: Fecha Termino:  30/01/2025 03:21:03 p. m.
+Detalles: Proceso Terminado
+
+INFO - 30/01/2025 03:21:21 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 30/01/2025 03:21:22 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 30/01/2025 03:21:22 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 30/01/2025 03:21:22 p. m.
+Mensaje:  =========================================== 
+Heineken.SalarioNomina
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 30/01/2025 03:23:07 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 30/01/2025 03:23:21 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.SalarioNomina' exportada a csv con 180339 filas
+Detalles: 
+
+INFO - 30/01/2025 03:23:21 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 30/01/2025 03:23:21 p. m.
+Mensaje:  =========================================== 
+ dbo.ResultadosJefesEmpleadosEquiposMensual
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 30/01/2025 03:23:22 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 30/01/2025 03:23:33 p. m.
+Mensaje: ExportToCSV: Tabla 'dbo.ResultadosJefesEmpleadosEquiposMensual' exportada a csv con 2673 filas
+Detalles: 
+
+INFO - 30/01/2025 03:23:33 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 30/01/2025 03:25:30 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 30/01/2025 03:25:30 p. m.
+Mensaje: Fecha Termino:  30/01/2025 03:25:30 p. m.
+Detalles: Proceso Terminado
+

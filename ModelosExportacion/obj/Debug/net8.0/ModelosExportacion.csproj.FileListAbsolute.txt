@@ -36,3 +36,18 @@ C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\Model
 C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.dll
 C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\refint\ModelosExportacion.dll
 C:\Users\cjuarez\Desktop\Migracion Varicent 9 - 10\Exportacion\Exportacion\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.pdb
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\bin\Debug\net8.0\ModelosExportacion.deps.json
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\bin\Debug\net8.0\ModelosExportacion.dll
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\bin\Debug\net8.0\ModelosExportacion.pdb
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\bin\Debug\net8.0\SFTPService.dll
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\bin\Debug\net8.0\SFTPService.pdb
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.csproj.AssemblyReference.cache
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.AssemblyInfoInputs.cache
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.AssemblyInfo.cs
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.csproj.CoreCompileInputs.cache
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\obj\Debug\net8.0\ModelosE.D231FB61.Up2Date
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.dll
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\obj\Debug\net8.0\refint\ModelosExportacion.dll
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\obj\Debug\net8.0\ModelosExportacion.pdb
+C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\obj\Debug\net8.0\ref\ModelosExportacion.dll

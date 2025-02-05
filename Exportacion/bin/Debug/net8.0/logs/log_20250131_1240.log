@@ -1,0 +1,17 @@
+INFO - 31/01/2025 12:40:50 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 31/01/2025 12:40:51 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+ERROR - 31/01/2025 12:40:51 p. m.
+Mensaje: Error limpieza directorio
+Detalles: Error al hacer la limpieza del directorio C:\Destino
+The process cannot access the file 'C:\Destino\Heineken.SalarioNomina - Copy.csv' because it is being used by another process.
+
+INFO - 31/01/2025 12:40:51 p. m.
+Mensaje: Fecha Termino:  31/01/2025 12:40:51 p. m.
+Detalles: Proceso Terminado
+

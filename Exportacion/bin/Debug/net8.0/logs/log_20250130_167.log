@@ -1,0 +1,33 @@
+INFO - 30/01/2025 04:07:14 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 30/01/2025 04:07:14 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 30/01/2025 04:07:14 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 30/01/2025 04:07:14 p. m.
+Mensaje:  =========================================== 
+dbo.ResultadosJefesEmpleadosEquiposMensual
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 30/01/2025 04:07:15 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 30/01/2025 04:07:17 p. m.
+Mensaje: ExportToCSV: Error - La tabla 'dbo.ResultadosJefesEmpleadosEquiposMensual'.
+'System.Collections.Generic.KeyValuePair<string,object>.key' is inaccessible due to its protection level
+Detalles:    at CallSite.Target(Closure, CallSite, Object)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at ModelosExportacion.Funciones.ExportCSV(DataTable tabla, String NombreTabla, String RutaDestino) in C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\Funciones.cs:line 278
+
+INFO - 30/01/2025 04:07:17 p. m.
+Mensaje:  ===========================================
+Detalles: 
+

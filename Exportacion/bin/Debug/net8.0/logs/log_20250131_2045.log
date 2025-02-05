@@ -1,0 +1,89 @@
+INFO - 31/01/2025 08:45:18 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 31/01/2025 08:45:19 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 31/01/2025 08:45:19 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 31/01/2025 08:45:19 p. m.
+Mensaje:  =========================================== 
+Heineken.SalarioNomina
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 31/01/2025 08:47:51 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 31/01/2025 08:47:55 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.SalarioNomina' exportada a csv con 180339 filas
+Detalles: 
+
+INFO - 31/01/2025 08:47:55 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 31/01/2025 08:47:55 p. m.
+Mensaje:  =========================================== 
+ Heineken.Posiciones
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 31/01/2025 08:48:04 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 31/01/2025 08:48:06 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.Posiciones' exportada a csv con 49503 filas
+Detalles: 
+
+INFO - 31/01/2025 08:48:06 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 31/01/2025 08:48:06 p. m.
+Mensaje:  =========================================== 
+ Heineken.CentrosCosto
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 31/01/2025 08:48:08 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 31/01/2025 08:48:08 p. m.
+Mensaje: ExportToCSV: Error - La tabla 'Heineken.CentrosCosto'.
+The process cannot access the file 'C:\Destino\Heineken.Posiciones.csv' because it is being used by another process.
+Detalles:    at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path)
+   at ModelosExportacion.Funciones.ExportCSV(DataTable tabla, String NombreTabla, String RutaDestino) in C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\Funciones.cs:line 180
+
+INFO - 31/01/2025 08:48:08 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 31/01/2025 08:54:20 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 31/01/2025 08:54:20 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 31/01/2025 08:54:20 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 31/01/2025 08:54:21 p. m.
+Mensaje: Fecha Termino:  31/01/2025 08:54:21 p. m.
+Detalles: Proceso Terminado
+

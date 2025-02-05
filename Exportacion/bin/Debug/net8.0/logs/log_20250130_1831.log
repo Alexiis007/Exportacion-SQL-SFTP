@@ -1,0 +1,59 @@
+INFO - 30/01/2025 06:31:43 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 30/01/2025 06:31:44 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+ERROR - 30/01/2025 06:31:44 p. m.
+Mensaje: Error limpieza directorio
+Detalles: Error al hacer la limpieza del directorio C:\Destino
+The process cannot access the file 'C:\Destino\Heineken.Sociedades.csv' because it is being used by another process.
+
+INFO - 30/01/2025 06:31:44 p. m.
+Mensaje: Fecha Termino:  30/01/2025 06:31:44 p. m.
+Detalles: Proceso Terminado
+
+INFO - 30/01/2025 06:31:52 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 30/01/2025 06:31:53 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 30/01/2025 06:31:53 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 30/01/2025 06:31:53 p. m.
+Mensaje:  =========================================== 
+Heineken.Sociedades
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 30/01/2025 06:31:53 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 30/01/2025 06:31:54 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.Sociedades' exportada a csv con 12 filas
+Detalles: 
+
+INFO - 30/01/2025 06:31:54 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 30/01/2025 06:32:05 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 30/01/2025 06:32:05 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 30/01/2025 06:32:05 p. m.
+Mensaje: Fecha Termino:  30/01/2025 06:32:05 p. m.
+Detalles: Proceso Terminado
+

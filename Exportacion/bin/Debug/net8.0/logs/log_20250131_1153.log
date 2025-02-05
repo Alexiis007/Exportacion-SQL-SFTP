@@ -1,0 +1,72 @@
+INFO - 31/01/2025 11:53:13 a. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 31/01/2025 11:53:14 a. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 31/01/2025 11:53:14 a. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 31/01/2025 11:53:14 a. m.
+Mensaje:  =========================================== 
+Heineken.SalarioNomina
+ =========================================== 
+Detalles: Procesando la tabla
+
+ERROR - 31/01/2025 11:53:14 a. m.
+Mensaje: Incorrect syntax near '='.
+Detalles: 
+
+INFO - 31/01/2025 11:53:14 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 31/01/2025 11:53:14 a. m.
+Mensaje: Proceso exitoso!
+Detalles: 
+
+INFO - 31/01/2025 11:53:14 a. m.
+Mensaje: Fecha Termino:  31/01/2025 11:53:14 a. m.
+Detalles: Proceso Terminado
+
+INFO - 31/01/2025 11:53:29 a. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 31/01/2025 11:53:30 a. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 31/01/2025 11:53:30 a. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 31/01/2025 11:53:30 a. m.
+Mensaje:  =========================================== 
+Heineken.SalarioNomina
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 31/01/2025 11:53:30 a. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 31/01/2025 11:53:30 a. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.SalarioNomina' exportada a csv con 1 filas
+Detalles: 
+
+INFO - 31/01/2025 11:53:31 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 31/01/2025 11:53:35 a. m.
+Mensaje: 
+Detalles: 
+
+INFO - 31/01/2025 11:53:35 a. m.
+Mensaje: Fecha Termino:  31/01/2025 11:53:35 a. m.
+Detalles: Proceso Terminado
+

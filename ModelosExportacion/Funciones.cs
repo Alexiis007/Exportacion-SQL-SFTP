@@ -17,6 +17,8 @@ using Microsoft.Extensions.Configuration;
 using CsvHelper;
 using CsvHelper.Configuration;
 using System.Globalization;
+using Microsoft.SqlServer.Server;
+using System.Drawing;
 
 namespace ModelosExportacion
 {
@@ -80,145 +82,7 @@ namespace ModelosExportacion
 
         }
 
-     
-
-        //public static void ExportTableDataToExcel(System.Data.DataTable table, string NombreTabla, string RutaDestino)
-        //{
-        //    RespuestaInterna respInt = new RespuestaInterna();
-
-        //    if (table != null && table.Rows.Count > 0)
-        //    {
-        //        object misValue = System.Reflection.Missing.Value;
-        //        Application application = new Application();
-        //        application.Visible = false;
-        //        Workbook workbook = application.Workbooks.Add(misValue);
-        //        Worksheet worksheet = (Worksheet)workbook.Worksheets.get_Item(1);
-
-        //        worksheet.Name = "CSharpeDataTableExportedToExcel";
-        //        worksheet.Cells.Font.Size = 12;
-        //        AddColumnInSheet(worksheet, table);
-
-        //        worksheet.Activate();
-
-        //        for (int j = 1; j <= table.Rows.Count; j++)
-        //        {
-        //            for (int i = 1; i <=table.Columns.Count; i++)
-        //            {
-        //                string data = table.Rows[j- 1].ItemArray[i - 1].ToString();
-        //                worksheet.Cells[j + 1,i] = data;
-        //            }
-        //        }
-
-        //        workbook.SaveAs(RutaDestino,
-        //        Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookNormal, misValue, misValue, misValue, misValue,
-        //        Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, misValue, misValue, misValue, misValue,
-        //        misValue);
-        //        workbook.Close(true, misValue, misValue);
-        //        application.Quit();
-
-
-        //    }
-        //    else
-        //    {
-        //        respInt.correcto = false;
-        //        respInt.mensaje = "No hay informacion para exportar a Excel";
-        //        respInt.detalle = "La tabla " + NombreTabla + "' no tiene filas para expotar";
-        //    }
-
-
-
-        //}
-
-        //public static void AddColumnInSheet(Worksheet worksheet, System.Data.DataTable TempDT)
-        //{
-        //    for (int i = 1; i <= TempDT.Columns.Count; i++)
-        //    {
-        //        string data = TempDT.Columns[i - 1].ToString();
-        //        worksheet.Cells[1, i] = data;
-        //    }
-        //}
-
-
-        //public static RespuestaInterna  ExportIron(System.Data.DataTable tabla, string NombreTabla, string RutaDestino, string licenciaIron)
-        //{
-        //    IronXL.License.LicenseKey = licenciaIron;
-        //    WorkBook wb = WorkBook.Create(ExcelFileFormat.XLSX);
-        //    WorkSheet ws = wb.DefaultWorkSheet;
-
-        //    string mensaje = "";
-
-        //    RespuestaInterna respInt = new RespuestaInterna();
-
-        //    if (tabla != null && tabla.Rows.Count > 0)     
-        //    {
-
-
-        //        // column headings
-        //        for (var i = 0; i < tabla.Columns.Count; i++)
-        //        {
-        //            ws.SetCellValue(0, i, tabla.Columns[i].ColumnName);
-        //        }
-
-        //        // rows
-        //        for (var i = 0; i < tabla.Rows.Count; i++)
-        //        {
-        //            // to do: format datetime values before printing
-        //            for (var j = 0; j < tabla.Columns.Count; j++)
-        //            {
-        //                ws.SetCellValue(i + 1, j + 1, tabla.Rows[i][j]);
-        //            }
-        //        }
-
-        //        // check file path
-        //        if (!string.IsNullOrEmpty(RutaDestino))
-        //        {
-        //            try
-        //            {
-        //                wb.SaveAs(RutaDestino);
-        //                mensaje = "ExportToExcel: Tabla '" + NombreTabla + "' exportada a Excel con " + tabla.Rows.Count.ToString() + " filas";
-        //                Console.WriteLine(mensaje);
-
-        //                respInt.correcto = true;
-        //                respInt.mensaje = mensaje;
-        //                respInt.detalle = "";
-
-        //            }
-        //            catch (Exception ex)
-        //            {
-        //                mensaje = "ExportToExcel: Error - La tabla '" + NombreTabla + "' no fue exportada Excel verifica la Ruta.\n"
-        //                                    + ex.Message;
-        //                Console.WriteLine(mensaje);
-
-        //                respInt.correcto = false;
-        //                respInt.mensaje = mensaje;
-        //                respInt.detalle = ex.StackTrace;
-
-
-        //            }
-        //        }
-        //        else
-        //        { // no file path is given
-        //            mensaje = "ExportToExcel: La ruta " + RutaDestino + " No es valida!";
-        //            Console.WriteLine(mensaje);
-
-        //            respInt.correcto = false;
-        //            respInt.mensaje = mensaje;
-        //            respInt.detalle = "";
-        //        }
-
-
-        //    }else
-        //    {
-        //        mensaje = "No hay informacion para exportar a Excel";
-        //        Console.WriteLine(mensaje);
-        //        respInt.correcto = false;
-        //        respInt.mensaje = mensaje;
-        //        respInt.detalle = "";
-        //    }
-
-        //    return respInt;
-        //}
-
+   
         public async static Task<RespuestaInterna> ExportCSV(System.Data.DataTable tabla, string NombreTabla, string RutaDestino)
         {
             string mensaje = "";
@@ -227,11 +91,11 @@ namespace ModelosExportacion
 
             if (tabla != null && tabla.Rows.Count > 0)
             {
-
                 if (!string.IsNullOrEmpty(RutaDestino))
                 {
                     try
                     {
+                        // ------ Creacion de CSVs ------
                         using (StreamWriter sw = new StreamWriter(RutaDestino))
                         {
                             StringBuilder sb = new StringBuilder();
@@ -239,51 +103,62 @@ namespace ModelosExportacion
                             string encabezados = string.Join(",", NombresColumnas);
                             sb.AppendLine(encabezados);
 
+                            //Version donato con replace, con ";"  sale desacomodada e incompleta. Con "," sale acomodada pero incompleta
                             List<string> valoresxlinea = tabla.AsEnumerable().Select(row => string.Join(",", row.ItemArray)).ToList();
                             string rows = string.Join(Environment.NewLine, valoresxlinea);
                             sb.AppendLine(rows);
 
-                            await sw.WriteLineAsync(sb);
-
+                            await sw.WriteLineAsync(sb.ToString());
+                            sw.Close();
                             sb.Clear();
                         }
 
-                        // ----- Configuraciones CSV ------
-
+                        // ----- Configuraciones De CSVs ------
+                        string ruta = @"C:\Destino";
                         //Nombres archivos CSV ubicados en la ruta
-                        string[] ArchivosCSV = Directory.GetFiles(RutaDestino, "*.csv");
+                        string[] ArchivosCSV = Directory.GetFiles(ruta, "*.csv");
 
                         foreach (var file in ArchivosCSV) {
-                            //Cargamos el archivo CSV con el reader (archivo de lectura)
-                            var reader = new StreamReader(file);
+                            if (file != ruta + "\\Heineken.Sociedades.csv" && file != ruta + "\\Heineken.DivisionesPersonal.csv") {
 
-                            //Cargamos el archivo reader como como un archivo de tipo csv de solo lectura
-                            var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture));
+                                //Cargamos el archivo CSV con el reader (archivo de lectura)
+                                var reader = new StreamReader(file);
 
-                            //Obtenemos la filas con un tipo de valor de retorno dynamic
-                            //Y ese retorno lo pasamos a una lista con la funcion ToList()
-                            var filas = csv.GetRecords<dynamic>().ToList();
+                                //Cargamos el archivo reader como como un archivo de tipo csv de solo lectura
+                                var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture));
 
-                            //Recoremos la lista de filas del csv
-                            foreach (var fila in filas){
-                                //Recorremos las columnas de esta fila
-                                foreach (var col in fila) {
-                                    //Verificamos el tipo de dato de la col
-                                    // Si es de tipo DateTime lo pasamos a Date
-                                    if (col.Value is DateTime) {
-                                        //Cambiamos el tipo de dato de la col. en la fila 
-                                        fila[col.Key] = ((DateTime)col.Value).Date.ToString("dd-mm-yyyy");
+                                //Obtenemos la filas con un tipo de valor de retorno dynamic
+                                //Y ese retorno lo pasamos a una lista con la funcion ToList()
+                                var filas = csv.GetRecords<dynamic>().ToList();
+
+                                //Recoremos la lista de filas del csv
+                                foreach (var fila in filas)
+                                {
+                                    var diccionarioFila = fila as IDictionary<string, object>;
+                                    //Recorremos las columnas de esta fila
+                                    foreach (var col in diccionarioFila)
+                                    {
+                                        //Verificamos el tipo de dato de la col
+                                        // Si es de tipo DateTime lo pasamos a Date
+                                        if (col.Value is string colValue && DateTime.TryParseExact(colValue, "dd/MM/yyyy hh:mm:ss tt", new CultureInfo("es-ES"), DateTimeStyles.None, out DateTime fecha))
+                                        {
+                                            diccionarioFila[col.Key] = fecha.ToString("dd/MM/yyyy");
+
+                                        }
                                     }
                                 }
-                            }
 
-                            //----- Guardamos el archivo csv -----
-                            // abrimos el archivo csv en escritura
-                            var writer = new StreamWriter(file);
-                            // convertimos ese archivo de escritura a un archivo csv de escritura
-                            var CsvWriter = new CsvWriter(writer, new CsvConfiguration(CultureInfo.InvariantCulture));
-                            //Ahora modificamos el archivo csv pasandole todas las filas modificadas
-                            CsvWriter.WriteRecords(filas);
+                                reader.Close();
+
+                                //----- Guardamos el archivo csv -----
+                                // abrimos el archivo csv en escritura
+                                var writer = new StreamWriter(file);
+                                // convertimos ese archivo de escritura a un archivo csv de escritura
+                                var CsvWriter = new CsvWriter(writer, new CsvConfiguration(CultureInfo.InvariantCulture));
+                                //Ahora modificamos el archivo csv pasandole todas las filas modificadas
+                                CsvWriter.WriteRecords(filas);
+                                writer.Close();
+                            }
                         }
 
                             mensaje = "ExportToCSV: Tabla '" + NombreTabla + "' exportada a csv con " + tabla.Rows.Count.ToString() + " filas";
@@ -307,7 +182,7 @@ namespace ModelosExportacion
                     
                 }
                 else
-                { // no file path is given
+                { 
                     mensaje = "ExportToCSV: La ruta " + RutaDestino + " No es valida!";
                     Console.WriteLine(mensaje);
 

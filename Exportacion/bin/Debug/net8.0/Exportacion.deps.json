@@ -743,6 +743,7 @@
       },
       "ModelosExportacion/1.0.0": {
         "dependencies": {
+          "CsvHelper": "33.0.1",
           "EPPlus": "7.4.1",
           "IronXL.Excel": "2024.10.2",
           "Microsoft.Extensions.Configuration": "8.0.0",

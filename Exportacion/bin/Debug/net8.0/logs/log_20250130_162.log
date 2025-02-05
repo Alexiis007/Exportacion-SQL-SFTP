@@ -1,0 +1,41 @@
+INFO - 30/01/2025 04:02:29 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 30/01/2025 04:02:30 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 30/01/2025 04:02:30 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 30/01/2025 04:02:30 p. m.
+Mensaje:  =========================================== 
+dbo.ResultadosJefesEmpleadosEquiposMensual
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 30/01/2025 04:02:34 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 30/01/2025 04:02:35 p. m.
+Mensaje: ExportToCSV: Error - La tabla 'dbo.ResultadosJefesEmpleadosEquiposMensual'.
+Cannot apply indexing with [] to an expression of type 'object'
+Detalles:    at CallSite.Target(Closure, CallSite, Object, Object, String)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute3[T0,T1,T2,TRet](CallSite site, T0 arg0, T1 arg1, T2 arg2)
+   at ModelosExportacion.Funciones.ExportCSV(DataTable tabla, String NombreTabla, String RutaDestino) in C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\ModelosExportacion\Funciones.cs:line 278
+
+INFO - 30/01/2025 04:02:35 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 30/01/2025 04:02:41 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 30/01/2025 04:02:41 p. m.
+Mensaje: Fecha Termino:  30/01/2025 04:02:41 p. m.
+Detalles: Proceso Terminado
+

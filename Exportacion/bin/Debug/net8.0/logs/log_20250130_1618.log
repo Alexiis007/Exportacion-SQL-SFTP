@@ -1,0 +1,38 @@
+INFO - 30/01/2025 04:18:38 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 30/01/2025 04:18:38 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 30/01/2025 04:18:38 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 30/01/2025 04:18:38 p. m.
+Mensaje:  =========================================== 
+dbo.ResultadosJefesEmpleadosEquiposMensual
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 30/01/2025 04:18:40 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 30/01/2025 04:18:41 p. m.
+Mensaje: ExportToCSV: Tabla 'dbo.ResultadosJefesEmpleadosEquiposMensual' exportada a csv con 2673 filas
+Detalles: 
+
+INFO - 30/01/2025 04:18:41 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 30/01/2025 04:18:45 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 30/01/2025 04:18:45 p. m.
+Mensaje: Fecha Termino:  30/01/2025 04:18:45 p. m.
+Detalles: Proceso Terminado
+

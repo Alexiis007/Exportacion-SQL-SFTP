@@ -1,0 +1,51 @@
+INFO - 30/01/2025 03:09:27 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 30/01/2025 03:09:27 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+ERROR - 30/01/2025 03:09:27 p. m.
+Mensaje: Error limpieza directorio
+Detalles: Error al hacer la limpieza del directorio C:\Destino
+The process cannot access the file 'C:\Destino\Heineken.SalarioNomina.csv' because it is being used by another process.
+
+INFO - 30/01/2025 03:09:27 p. m.
+Mensaje: Fecha Termino:  30/01/2025 03:09:27 p. m.
+Detalles: Proceso Terminado
+
+INFO - 30/01/2025 03:09:36 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 30/01/2025 03:09:37 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+ERROR - 30/01/2025 03:09:37 p. m.
+Mensaje: Error limpieza directorio
+Detalles: Error al hacer la limpieza del directorio C:\Destino
+The process cannot access the file 'C:\Destino\Heineken.SalarioNomina.csv' because it is being used by another process.
+
+INFO - 30/01/2025 03:09:37 p. m.
+Mensaje: Fecha Termino:  30/01/2025 03:09:37 p. m.
+Detalles: Proceso Terminado
+
+INFO - 30/01/2025 03:09:56 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 30/01/2025 03:09:57 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+ERROR - 30/01/2025 03:09:57 p. m.
+Mensaje: Error limpieza directorio
+Detalles: Error al hacer la limpieza del directorio C:\Destino
+The process cannot access the file 'C:\Destino\Heineken.SalarioNomina.csv' because it is being used by another process.
+
+INFO - 30/01/2025 03:09:57 p. m.
+Mensaje: Fecha Termino:  30/01/2025 03:09:57 p. m.
+Detalles: Proceso Terminado
+
