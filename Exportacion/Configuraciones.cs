@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Clase para la obtencion de los appsettings
+
 namespace Exportacion
 {
     internal class Configuraciones
@@ -18,15 +20,13 @@ namespace Exportacion
                 var builder = new ConfigurationBuilder().SetBasePath(Path.GetDirectoryName(ExecutablePath))
                     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
-
                 IConfiguration config = builder.Build();
-                return config.GetSection(grupo + ":" + subgrupo).Value.ToString();
+                return config.GetSection(grupo + ":" + subgrupo).Value.ToString();           
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Error al obtener el parametro : " + subgrupo + ", " +ex.InnerException.Message + ", " + ex.InnerException.InnerException + "\n");
-                throw new Exception("Error al obtener el parametro : " + subgrupo, ex);
-                     
+                throw new Exception("Error al obtener el parametro : " + subgrupo, ex);                     
             }
 
 

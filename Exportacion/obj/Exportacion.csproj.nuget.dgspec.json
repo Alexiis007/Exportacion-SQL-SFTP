@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\Exportacion\\Exportacion.csproj": {}
+    "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\Exportacion\\Exportacion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\Exportacion\\Exportacion.csproj": {
+    "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\Exportacion\\Exportacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\Exportacion\\Exportacion.csproj",
+        "projectUniqueName": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\Exportacion\\Exportacion.csproj",
         "projectName": "Exportacion",
-        "projectPath": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\Exportacion\\Exportacion.csproj",
-        "packagesPath": "C:\\Users\\cjuarez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\Exportacion\\obj\\",
+        "projectPath": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\Exportacion\\Exportacion.csproj",
+        "packagesPath": "C:\\Users\\PARAMF01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\Exportacion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\cjuarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PARAMF01\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -34,11 +32,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\ModelosExportacion\\ModelosExportacion.csproj": {
-                "projectPath": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\ModelosExportacion\\ModelosExportacion.csproj"
+              "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\ModelosExportacion\\ModelosExportacion.csproj": {
+                "projectPath": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\ModelosExportacion\\ModelosExportacion.csproj"
               },
-              "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\SFTPService\\SFTPService.csproj": {
-                "projectPath": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\SFTPService\\SFTPService.csproj"
+              "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\SFTPService\\SFTPService.csproj": {
+                "projectPath": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\SFTPService\\SFTPService.csproj"
               }
             }
           }
@@ -51,7 +49,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -89,7 +87,7 @@
             },
             "SSH.NET": {
               "target": "Package",
-              "version": "[2024.1.0, )"
+              "version": "[2024.2.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
@@ -112,28 +110,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\ModelosExportacion\\ModelosExportacion.csproj": {
+    "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\ModelosExportacion\\ModelosExportacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\ModelosExportacion\\ModelosExportacion.csproj",
+        "projectUniqueName": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\ModelosExportacion\\ModelosExportacion.csproj",
         "projectName": "ModelosExportacion",
-        "projectPath": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\ModelosExportacion\\ModelosExportacion.csproj",
-        "packagesPath": "C:\\Users\\cjuarez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\ModelosExportacion\\obj\\",
+        "projectPath": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\ModelosExportacion\\ModelosExportacion.csproj",
+        "packagesPath": "C:\\Users\\PARAMF01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\ModelosExportacion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\cjuarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PARAMF01\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -146,8 +142,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\SFTPService\\SFTPService.csproj": {
-                "projectPath": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\SFTPService\\SFTPService.csproj"
+              "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\SFTPService\\SFTPService.csproj": {
+                "projectPath": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\SFTPService\\SFTPService.csproj"
               }
             }
           }
@@ -160,7 +156,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -198,7 +194,7 @@
             },
             "SSH.NET": {
               "target": "Package",
-              "version": "[2024.1.0, )"
+              "version": "[2024.2.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
@@ -221,28 +217,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\SFTPService\\SFTPService.csproj": {
+    "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\SFTPService\\SFTPService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\SFTPService\\SFTPService.csproj",
+        "projectUniqueName": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\SFTPService\\SFTPService.csproj",
         "projectName": "SFTPService",
-        "projectPath": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\SFTPService\\SFTPService.csproj",
-        "packagesPath": "C:\\Users\\cjuarez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\SFTPService\\obj\\",
+        "projectPath": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\SFTPService\\SFTPService.csproj",
+        "packagesPath": "C:\\Users\\PARAMF01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\SFTPService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\cjuarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PARAMF01\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -265,7 +259,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -279,7 +273,7 @@
             },
             "SSH.NET": {
               "target": "Package",
-              "version": "[2020.0.2, )"
+              "version": "[2024.2.0, )"
             }
           },
           "imports": [
@@ -298,7 +292,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

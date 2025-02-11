@@ -1,0 +1,22 @@
+INFO - 05/02/2025 11:15:20 a. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 05/02/2025 11:15:21 a. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 05/02/2025 11:15:21 a. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 05/02/2025 11:15:21 a. m.
+Mensaje:  =========================================== 
+Heineken.UnidadesOrganizativas
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 05/02/2025 11:15:22 a. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+

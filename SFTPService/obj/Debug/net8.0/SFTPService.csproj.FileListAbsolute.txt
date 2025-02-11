@@ -58,3 +58,16 @@ C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\SFTPService\obj\De
 C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\SFTPService\obj\Debug\net8.0\refint\SFTPService.dll
 C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\SFTPService\obj\Debug\net8.0\SFTPService.pdb
 C:\Users\PARAMF01\Desktop\Migracion\Exportacion-SQL-SFTP-main\SFTPService\obj\Debug\net8.0\ref\SFTPService.dll
+C:\Users\PARAMF01\Desktop\Migracion\Repo\SFTPService\obj\Debug\net8.0\SFTPService.csproj.AssemblyReference.cache
+C:\Users\PARAMF01\Desktop\Migracion\Repo\SFTPService\obj\Debug\net8.0\SFTPService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PARAMF01\Desktop\Migracion\Repo\SFTPService\obj\Debug\net8.0\SFTPService.AssemblyInfoInputs.cache
+C:\Users\PARAMF01\Desktop\Migracion\Repo\SFTPService\obj\Debug\net8.0\SFTPService.AssemblyInfo.cs
+C:\Users\PARAMF01\Desktop\Migracion\Repo\SFTPService\obj\Debug\net8.0\SFTPService.csproj.CoreCompileInputs.cache
+C:\Users\PARAMF01\Desktop\Migracion\Repo\SFTPService\obj\Debug\net8.0\SFTPService.sourcelink.json
+C:\Users\PARAMF01\Desktop\Migracion\Repo\SFTPService\bin\Debug\net8.0\SFTPService.deps.json
+C:\Users\PARAMF01\Desktop\Migracion\Repo\SFTPService\bin\Debug\net8.0\SFTPService.dll
+C:\Users\PARAMF01\Desktop\Migracion\Repo\SFTPService\bin\Debug\net8.0\SFTPService.pdb
+C:\Users\PARAMF01\Desktop\Migracion\Repo\SFTPService\obj\Debug\net8.0\SFTPService.dll
+C:\Users\PARAMF01\Desktop\Migracion\Repo\SFTPService\obj\Debug\net8.0\refint\SFTPService.dll
+C:\Users\PARAMF01\Desktop\Migracion\Repo\SFTPService\obj\Debug\net8.0\SFTPService.pdb
+C:\Users\PARAMF01\Desktop\Migracion\Repo\SFTPService\obj\Debug\net8.0\ref\SFTPService.dll

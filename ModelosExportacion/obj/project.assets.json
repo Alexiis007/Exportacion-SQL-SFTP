@@ -15,6 +15,19 @@
           }
         }
       },
+      "BouncyCastle.Cryptography/2.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BouncyCastle.Cryptography.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BouncyCastle.Cryptography.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "CsvHelper/33.0.1": {
         "type": "package",
         "compile": {
@@ -868,8 +881,11 @@
           }
         }
       },
-      "SSH.NET/2024.1.0": {
+      "SSH.NET/2024.2.0": {
         "type": "package",
+        "dependencies": {
+          "BouncyCastle.Cryptography": "2.4.0"
+        },
         "compile": {
           "lib/net8.0/Renci.SshNet.dll": {
             "related": ".xml"
@@ -1160,7 +1176,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
-          "SSH.NET": "2020.0.2"
+          "SSH.NET": "2024.2.0"
         },
         "compile": {
           "bin/placeholder/SFTPService.dll": {}
@@ -1185,6 +1201,26 @@
         "lib/net40/BitMiracle.LibTiff.NET.xml",
         "lib/netstandard2.0/BitMiracle.LibTiff.NET.dll",
         "lib/netstandard2.0/BitMiracle.LibTiff.NET.xml"
+      ]
+    },
+    "BouncyCastle.Cryptography/2.4.0": {
+      "sha512": "SwXsAV3sMvAU/Nn31pbjhWurYSjJ+/giI/0n6tCrYoupEK34iIHCuk3STAd9fx8yudM85KkLSVdn951vTng/vQ==",
+      "type": "package",
+      "path": "bouncycastle.cryptography/2.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "bouncycastle.cryptography.2.4.0.nupkg.sha512",
+        "bouncycastle.cryptography.nuspec",
+        "lib/net461/BouncyCastle.Cryptography.dll",
+        "lib/net461/BouncyCastle.Cryptography.xml",
+        "lib/net6.0/BouncyCastle.Cryptography.dll",
+        "lib/net6.0/BouncyCastle.Cryptography.xml",
+        "lib/netstandard2.0/BouncyCastle.Cryptography.dll",
+        "lib/netstandard2.0/BouncyCastle.Cryptography.xml",
+        "packageIcon.png"
       ]
     },
     "CsvHelper/33.0.1": {
@@ -2456,10 +2492,10 @@
         "sixlabors.imagesharp.drawing.nuspec"
       ]
     },
-    "SSH.NET/2024.1.0": {
-      "sha512": "pyOea9czgC+OwMoetuWtMuwRebOyskKkqTZtODgyEZ5K6JwV+Hh/GFiyYubl93YnEvmvNZeuyWyUDsb3LvBDYA==",
+    "SSH.NET/2024.2.0": {
+      "sha512": "9r+4UF2P51lTztpd+H7SJywk7WgmlWB//Cm2o96c6uGVZU5r58ys2/cD9pCgTk0zCdSkfflWL1WtqQ9I4IVO9Q==",
       "type": "package",
-      "path": "ssh.net/2024.1.0",
+      "path": "ssh.net/2024.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2477,7 +2513,7 @@
         "lib/netstandard2.0/Renci.SshNet.xml",
         "lib/netstandard2.1/Renci.SshNet.dll",
         "lib/netstandard2.1/Renci.SshNet.xml",
-        "ssh.net.2024.1.0.nupkg.sha512",
+        "ssh.net.2024.2.0.nupkg.sha512",
         "ssh.net.nuspec"
       ]
     },
@@ -3046,33 +3082,30 @@
       "Microsoft.Extensions.Hosting >= 8.0.1",
       "Microsoft.Office.Interop.Excel >= 15.0.4795.1001",
       "SFTPService >= 1.0.0",
-      "SSH.NET >= 2024.1.0",
+      "SSH.NET >= 2024.2.0",
       "System.Data.SqlClient >= 4.8.6"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cjuarez\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\PARAMF01\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\ModelosExportacion\\ModelosExportacion.csproj",
+      "projectUniqueName": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\ModelosExportacion\\ModelosExportacion.csproj",
       "projectName": "ModelosExportacion",
-      "projectPath": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\ModelosExportacion\\ModelosExportacion.csproj",
-      "packagesPath": "C:\\Users\\cjuarez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\ModelosExportacion\\obj\\",
+      "projectPath": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\ModelosExportacion\\ModelosExportacion.csproj",
+      "packagesPath": "C:\\Users\\PARAMF01\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\ModelosExportacion\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\cjuarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PARAMF01\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -3085,8 +3118,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\SFTPService\\SFTPService.csproj": {
-              "projectPath": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\SFTPService\\SFTPService.csproj"
+            "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\SFTPService\\SFTPService.csproj": {
+              "projectPath": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\SFTPService\\SFTPService.csproj"
             }
           }
         }
@@ -3099,7 +3132,7 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       },
       "SdkAnalysisLevel": "9.0.100"
     },
@@ -3137,7 +3170,7 @@
           },
           "SSH.NET": {
             "target": "Package",
-            "version": "[2024.1.0, )"
+            "version": "[2024.2.0, )"
           },
           "System.Data.SqlClient": {
             "target": "Package",
@@ -3160,7 +3193,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

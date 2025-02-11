@@ -1,0 +1,61 @@
+INFO - 05/02/2025 11:08:06 a. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 05/02/2025 11:08:06 a. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 05/02/2025 11:08:07 a. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 05/02/2025 11:08:07 a. m.
+Mensaje:  =========================================== 
+Heineken.UnidadesOrganizativas
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 05/02/2025 11:08:07 a. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 05/02/2025 11:08:07 a. m.
+Mensaje: ExportToCSV: Error - La tabla 'Heineken.UnidadesOrganizativas'.
+Index was outside the bounds of the array.
+Detalles:    at ModelosExportacion.Funciones.ExportCSV(DataTable tabla, String NombreTabla, String RutaDestino) in C:\Users\PARAMF01\Desktop\Migracion\Repo\ModelosExportacion\Funciones.cs:line 148
+
+INFO - 05/02/2025 11:08:07 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 05/02/2025 11:08:12 a. m.
+Mensaje: 
+Detalles: 
+
+INFO - 05/02/2025 11:08:12 a. m.
+Mensaje: Fecha Termino:  05/02/2025 11:08:12 a. m.
+Detalles: Proceso Terminado
+
+INFO - 05/02/2025 11:08:23 a. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 05/02/2025 11:08:24 a. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 05/02/2025 11:08:24 a. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 05/02/2025 11:08:24 a. m.
+Mensaje:  =========================================== 
+Heineken.UnidadesOrganizativas
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 05/02/2025 11:08:25 a. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+

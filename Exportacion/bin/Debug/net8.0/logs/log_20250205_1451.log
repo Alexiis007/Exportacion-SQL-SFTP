@@ -1,0 +1,91 @@
+INFO - 05/02/2025 02:51:13 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 05/02/2025 02:51:13 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+ERROR - 05/02/2025 02:51:13 p. m.
+Mensaje: Error limpieza directorio
+Detalles: Error al hacer la limpieza del directorio C:\Destino
+The process cannot access the file 'C:\Destino\Heineken.UnidadesOrganizativas.csv' because it is being used by another process.
+
+INFO - 05/02/2025 02:51:13 p. m.
+Mensaje: Fecha Termino:  05/02/2025 02:51:13 p. m.
+Detalles: Proceso Terminado
+
+INFO - 05/02/2025 02:51:34 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 05/02/2025 02:51:35 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 05/02/2025 02:51:35 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 05/02/2025 02:51:35 p. m.
+Mensaje:  =========================================== 
+Heineken.UnidadesOrganizativas
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 05/02/2025 02:51:35 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 05/02/2025 02:51:36 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.UnidadesOrganizativas' exportada a csv con 5249 filas
+Detalles: 
+
+INFO - 05/02/2025 02:51:36 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 05/02/2025 02:51:36 p. m.
+Mensaje:  =========================================== 
+ Heineken.Sociedades
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 05/02/2025 02:51:36 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 05/02/2025 02:51:36 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.Sociedades' exportada a csv con 12 filas
+Detalles: 
+
+INFO - 05/02/2025 02:51:36 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 05/02/2025 02:51:36 p. m.
+Mensaje:  =========================================== 
+ Heineken.DivisionesPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 05/02/2025 02:51:36 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 05/02/2025 02:51:37 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.DivisionesPersonal' exportada a csv con 12 filas
+Detalles: 
+
+INFO - 05/02/2025 02:51:37 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 05/02/2025 02:51:47 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 05/02/2025 02:51:47 p. m.
+Mensaje: Fecha Termino:  05/02/2025 02:51:47 p. m.
+Detalles: Proceso Terminado
+

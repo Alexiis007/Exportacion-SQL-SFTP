@@ -9,6 +9,13 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Logging.Abstractions;
 using SFTPService;
 using System.Linq.Expressions;
+using CsvHelper.Configuration;
+using System.Globalization;
+using CsvHelper;
+using System.Data;
+using System.Drawing.Drawing2D;
+using SixLabors.ImageSharp.Drawing;
+
 
 
 
@@ -45,6 +52,10 @@ namespace ModelosExportacion
 
         private string ubiRutaCarpetaLocal;
         private string ubiRutaCarpetaDestino;
+
+        private string ubiRutaCarpetaDestinoTablasToSQL;
+        private string ubiRutaCarpetaOrigenTablasToSQL;
+
         private Log log;
 
         private SftpConfig ICMMNFHeinekenQA_SFTP;
@@ -55,15 +66,18 @@ namespace ModelosExportacion
 
         public ExportarInicio(configuracionesAppSettings config)
         {
+            //Informacion SQL-BD donde se extrae la data para varicent
             this.bdcnServer = encoder.DesEncriptarBase64(config.bdcnServer);
             this.bdcnBD = encoder.DesEncriptarBase64(config.bdcnBD);
             this.bdcnUsuario = encoder.DesEncriptarBase64(config.bdcnUsuario);
             this.bdcnContraseña = encoder.DesEncriptarBase64(config.bdcnContraseña);
 
-
+            //Ubicacion local de las tablas y ubicacion destino de los modelos de varicent (SQL to Varicent)
             this.ubiRutaCarpetaLocal = config.ubiRutaCarpetaLocalExcel;
             this.ubiRutaCarpetaDestino = config.ubiRutaCarpetaDestinoExcel;
-            this.strTablasExportar = config.strTablasExportar;
+
+            //Tablas que se necesitan extraer de SQL-BD para varicent
+            this.strTablasExportar = config.strTablasExportar;    
 
             // ICMMNFHeinekenQA_SFTP
             this.sftpServer_ICMMNFHeinekenQA_SFTP = encoder.DesEncriptarBase64(config.sftpcnServer_ICMMNFHeinekenQA_SFTP); 
@@ -85,6 +99,10 @@ namespace ModelosExportacion
 
             this.intMaximoRegistros = config.intMaximoRegistros;
             this.dteFechaFiltro = config.dteFechaFiltro;
+
+            //Ubicacion remota de las tablas y ubicacion destino de la carpeta contenedora local (Varicent to SQL)
+            this.ubiRutaCarpetaDestinoTablasToSQL = config.ubiRutaCarpetaDestinoTablasToSQL;
+            this.ubiRutaCarpetaOrigenTablasToSQL = config.ubiRutaCarpetaOrigenTablasToSQL;
 
             ICMMNFHeinekenQA_SFTP = new SftpConfig
             {
@@ -113,7 +131,7 @@ namespace ModelosExportacion
             log = new Log();
         }
   
-        private async  Task<RespuestaInterna> ExportarArchivo(string tabla, ConexionBD bd, string RutaExcel, string query)
+        private async Task<RespuestaInterna> ExportarArchivo(string tabla, ConexionBD bd, string RutaExcel, string query)
         {
           
             RespuestaInterna exportacion = new RespuestaInterna();
@@ -126,7 +144,6 @@ namespace ModelosExportacion
                 log.Escribe(LogType.INFO, "Exportando tabla", "Exportacion de Informacion");
 
                 exportacion = await Funciones.ExportCSV(respuesta.Result.tabla, tabla, RutaExcel);
-                //exportacion = Funciones.ExportarExcelEppPlus(respuesta.Result.tabla, tabla, RutaExcel);
 
                 log.Escribe(LogType.INFO, exportacion.mensaje, exportacion.detalle);
             }
@@ -142,13 +159,12 @@ namespace ModelosExportacion
 
             return exportacion;
         }
-
        
-        private RespuestaInterna LimpiarDirectorio(string CarpetaOrigen)
+        private RespuestaInterna LimpiarDirectorio(string CarpetaOrigen, string tipoArchivos=".csv")
         {
             RespuestaInterna limpiado = new RespuestaInterna();
 
-            string[] files = Directory.GetFiles(CarpetaOrigen, "*.csv", SearchOption.AllDirectories);
+            string[] files = Directory.GetFiles(CarpetaOrigen, "*"+tipoArchivos, SearchOption.AllDirectories);
             string mensaje = "";
             try
             {
@@ -174,22 +190,19 @@ namespace ModelosExportacion
             return limpiado;
         }
 
-        public async Task  ExportarArchivosAsync()
+        public async Task  ExportarArchivosAsyncToSFTP()
         {
-           Console.Clear();
+            Console.Clear();
 
             Console.WriteLine("       Inicia Proceso de Exportacion!");
             Console.WriteLine("Fecha Inicio:  " + DateTime.Now.ToString());
             Console.WriteLine("==============================================================");
 
-
             log.Escribe(LogType.INFO, "Inicia Proceso de Exportacion!", "Exportar archivos");
-            // Se crea la conexion a SQL server
+
             ConexionBD bd = new ConexionBD(bdcnServer, bdcnBD, bdcnUsuario, bdcnContraseña);
             bool prueba = await bd.probarConexion();
 
-            
-            // Se verifica si hubo conexion exitosa SQL
             if (prueba)
             {
                 Console.WriteLine(" == Prueba de conexion BD Exitosa == ");
@@ -198,15 +211,13 @@ namespace ModelosExportacion
 
                 RespuestaInterna exportacion_limpieza = new RespuestaInterna();
                 exportacion_limpieza = LimpiarDirectorio(ubiRutaCarpetaLocal);
-
-                // Se verifica si fue exitosa la limpieza del directorio local donde se almacenaran los archivos
+                
                 if (exportacion_limpieza.correcto)
                 {
                     log.Escribe(LogType.INFO, exportacion_limpieza.mensaje, exportacion_limpieza.detalle);
 
                     String[] tablas = strTablasExportar.Split(',');
 
-                    // Se recorren las tablas configuradas a importar 
                     foreach (String tabla in tablas)
                     {
                         string NombreTabla = tabla.Trim();
@@ -269,9 +280,7 @@ namespace ModelosExportacion
                                 // Genera el archivo para la tabla solicitada
                                 query = "Select * from " + tabla.Trim();
                                 exportacion = ExportarArchivo(tabla.Trim(), bd, RutaExcel, query).Result;
-
                             }
-
                         }
                         else
                         {
@@ -294,7 +303,7 @@ namespace ModelosExportacion
 
 
                     Console.WriteLine(ICMMNFHeinekenQA.mensaje);
-                    log.Escribe(ICMMNFHeinekenQA.correcto ? LogType.INFO  : LogType.ERROR, ICMMNFHeinekenQA.mensaje, ICMMNFHeinekenQA.detalle);
+                    log.Escribe(ICMMNFHeinekenQA.correcto ? LogType.INFO : LogType.ERROR, ICMMNFHeinekenQA.mensaje, ICMMNFHeinekenQA.detalle);
                     Console.WriteLine("===========================================");
                     Console.WriteLine(ICMCOMHeinekenQA.mensaje);
                     log.Escribe(ICMCOMHeinekenQA.correcto ? LogType.INFO : LogType.ERROR, ICMCOMHeinekenQA.mensaje, ICMCOMHeinekenQA.detalle);
@@ -321,7 +330,30 @@ namespace ModelosExportacion
 
         }
 
-       
+        public async Task ExportarArchivosAsyncToSQL()
+        {
+            Console.Clear();
 
+            Console.WriteLine("       Inicia Proceso de Exportacion a SQL!");
+            Console.WriteLine("Fecha Inicio:  " + DateTime.Now.ToString());
+            Console.WriteLine("==============================================================");
+
+            log.Escribe(LogType.INFO, "Inicia Proceso de Exportacion!", "Exportar Data");
+
+            LimpiarDirectorio(ubiRutaCarpetaDestinoTablasToSQL, ".csv");
+
+            RespuestaInterna resInt = new RespuestaInterna();
+
+            resInt = await Funciones.DownloadCSV(ubiRutaCarpetaOrigenTablasToSQL, ubiRutaCarpetaDestinoTablasToSQL, ICMMNFHeinekenQA_SFTP, "TablasToReplicaICM_DB");
+
+            Console.WriteLine(resInt.mensaje);
+            log.Escribe(resInt.correcto ? LogType.INFO : LogType.ERROR, resInt.mensaje, resInt.detalle);
+
+            Console.WriteLine("==============================================================");
+            Console.WriteLine("Procesando los archivos descargados para la exportacion a SQL.");
+            Console.WriteLine("==============================================================");
+
+            Funciones.CSVToQuery(ubiRutaCarpetaDestinoTablasToSQL, bdcnServer, bdcnBD, bdcnUsuario, bdcnContraseña);
+        }
     }
 }

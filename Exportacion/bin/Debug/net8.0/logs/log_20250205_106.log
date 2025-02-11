@@ -1,0 +1,38 @@
+INFO - 05/02/2025 10:06:05 a. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 05/02/2025 10:06:06 a. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 05/02/2025 10:06:06 a. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 05/02/2025 10:06:06 a. m.
+Mensaje:  =========================================== 
+Heineken.UnidadesOrganizativas
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 05/02/2025 10:06:08 a. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 05/02/2025 10:06:23 a. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.UnidadesOrganizativas' exportada a csv con 5249 filas
+Detalles: 
+
+INFO - 05/02/2025 10:06:23 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 05/02/2025 10:06:29 a. m.
+Mensaje: 
+Detalles: 
+
+INFO - 05/02/2025 10:06:29 a. m.
+Mensaje: Fecha Termino:  05/02/2025 10:06:29 a. m.
+Detalles: Proceso Terminado
+

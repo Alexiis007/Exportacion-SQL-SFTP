@@ -16,7 +16,7 @@
           "Microsoft.Extensions.Hosting": "8.0.1",
           "Microsoft.Office.Interop.Excel": "15.0.4795.1001",
           "SFTPService": "1.0.0",
-          "SSH.NET": "2024.1.0",
+          "SSH.NET": "2024.2.0",
           "System.Data.SqlClient": "4.8.6"
         },
         "runtime": {
@@ -28,6 +28,14 @@
           "lib/netstandard2.0/BitMiracle.LibTiff.NET.dll": {
             "assemblyVersion": "2.4.649.0",
             "fileVersion": "2.4.649.0"
+          }
+        }
+      },
+      "BouncyCastle.Cryptography/2.4.0": {
+        "runtime": {
+          "lib/net6.0/BouncyCastle.Cryptography.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.4.0.33771"
           }
         }
       },
@@ -584,11 +592,14 @@
           }
         }
       },
-      "SSH.NET/2024.1.0": {
+      "SSH.NET/2024.2.0": {
+        "dependencies": {
+          "BouncyCastle.Cryptography": "2.4.0"
+        },
         "runtime": {
           "lib/net8.0/Renci.SshNet.dll": {
-            "assemblyVersion": "2024.1.0.0",
-            "fileVersion": "2024.1.0.0"
+            "assemblyVersion": "2024.2.0.1",
+            "fileVersion": "2024.2.0.1"
           }
         }
       },
@@ -743,7 +754,7 @@
       "SFTPService/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
-          "SSH.NET": "2024.1.0"
+          "SSH.NET": "2024.2.0"
         },
         "runtime": {
           "SFTPService.dll": {
@@ -766,6 +777,13 @@
       "sha512": "sha512-XCEdfCphKo0UAvSg1h/OzOFWtjkIGnPMAziYkNqV7NVrqb/tZJTBxJhxIEX7gpvQwg8GIRYt133SUncfkKfjLA==",
       "path": "bitmiracle.libtiff.net/2.4.649",
       "hashPath": "bitmiracle.libtiff.net.2.4.649.nupkg.sha512"
+    },
+    "BouncyCastle.Cryptography/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SwXsAV3sMvAU/Nn31pbjhWurYSjJ+/giI/0n6tCrYoupEK34iIHCuk3STAd9fx8yudM85KkLSVdn951vTng/vQ==",
+      "path": "bouncycastle.cryptography/2.4.0",
+      "hashPath": "bouncycastle.cryptography.2.4.0.nupkg.sha512"
     },
     "CsvHelper/33.0.1": {
       "type": "package",
@@ -1082,12 +1100,12 @@
       "path": "sixlabors.imagesharp.drawing/2.1.4",
       "hashPath": "sixlabors.imagesharp.drawing.2.1.4.nupkg.sha512"
     },
-    "SSH.NET/2024.1.0": {
+    "SSH.NET/2024.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pyOea9czgC+OwMoetuWtMuwRebOyskKkqTZtODgyEZ5K6JwV+Hh/GFiyYubl93YnEvmvNZeuyWyUDsb3LvBDYA==",
-      "path": "ssh.net/2024.1.0",
-      "hashPath": "ssh.net.2024.1.0.nupkg.sha512"
+      "sha512": "sha512-9r+4UF2P51lTztpd+H7SJywk7WgmlWB//Cm2o96c6uGVZU5r58ys2/cD9pCgTk0zCdSkfflWL1WtqQ9I4IVO9Q==",
+      "path": "ssh.net/2024.2.0",
+      "hashPath": "ssh.net.2024.2.0.nupkg.sha512"
     },
     "System.ComponentModel.Annotations/5.0.0": {
       "type": "package",

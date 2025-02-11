@@ -2,6 +2,7 @@
 using Renci.SshNet;
 using Renci.SshNet.Sftp;
 using System.Net.Http.Json;
+using System.Runtime.InteropServices.JavaScript;
 
 namespace SFTPService
 {
@@ -31,7 +32,7 @@ namespace SFTPService
             try
             {
                 client.Connect();
-                return client.ListDirectory(remoteDirectory);
+                return (IEnumerable<SftpFile>)client.ListDirectory(remoteDirectory);
             }
             catch (Exception exception)
             {
@@ -81,23 +82,57 @@ namespace SFTPService
         /// <returns>void</returns>
         public void DownloadFile(string remoteFilePath, string localFilePath)
         {
+            var fileName= remoteFilePath.Split("|")[1];
+            remoteFilePath = remoteFilePath.Split("|")[0];
+
             using var client = new SftpClient(_config.Host, _config.Port == 0 ? 22 : _config.Port, _config.UserName, _config.Password);
             try
             {
                 client.Connect();
-                using var s = File.Create(localFilePath);
-                client.DownloadFile(remoteFilePath, s);
-                _logger.LogInformation($"Finished downloading file [{localFilePath}] from [{remoteFilePath}]");
+
+                // En base a el nombre del archivo y la fecha de modificacion sacamos el mas reciente
+                var lastFile = client.ListDirectory(remoteFilePath)
+                  .Where(file => !file.IsDirectory && file.Name.Contains(fileName)) 
+                  .OrderByDescending(file => file.LastWriteTime) 
+                  .ToList().First();
+
+                // Si el archivo es tipo txt se pasa a csv
+                if (lastFile.FullName.Contains(".txt"))
+                {
+                    using var s = File.Create(localFilePath + "\\" + lastFile.Name.Replace(".txt", ".csv"));
+                    client.DownloadFile(remoteFilePath.Replace("\\", "") + "/" + lastFile.Name, s);
+                }
+                else
+                {
+                    using var s = File.Create(localFilePath + "\\" + lastFile);
+                    client.DownloadFile(remoteFilePath.Replace("\\", "") + "/" + lastFile.Name, s);
+                    client.DownloadFile(remoteFilePath.Replace("\\", "") + "/" + lastFile.Name, s);
+                }
             }
             catch (Exception exception)
             {
                 _logger.LogError(exception, $"Failed to download file [{localFilePath}] from [{remoteFilePath}]");
+                Console.WriteLine($"Failed to download file [{localFilePath}] from [{remoteFilePath}] Error:" + exception.Message);
             }
             finally
             {
                 client.Disconnect();
             }
         }
+
+        public List<String> GetFiles(string path, SftpClient client)
+        {
+            using (client)
+            {
+                client.Connect();
+                return client
+                    .ListDirectory(path)
+                    .Where(f => !f.IsDirectory)
+                    .Select(f => f.Name)
+                    .ToList();
+            }
+        }
+
 
         /// <summary>
         /// delete the remote files 

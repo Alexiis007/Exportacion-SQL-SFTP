@@ -98,7 +98,7 @@ namespace Exportacion
 
             //  # # # # # # #   INICIA FUNCIONALIDAD   # # # # # # #  //
             ExportarInicio exp = new ExportarInicio(config);
-            await exp.ExportarArchivosAsync();
+            await exp.ExportarArchivosAsyncToSFTP();
 
         }
 

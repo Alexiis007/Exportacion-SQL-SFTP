@@ -1,29 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\",
+  "WorkspaceRootPath": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B430548-3EDE-4B11-AA3C-C008097050F3}|ModelosExportacion\\ModelosExportacion.csproj|c:\\users\\cjuarez\\desktop\\migracion varicent 9 - 10\\exportacion\\exportacion\\modelosexportacion\\exportarinicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B430548-3EDE-4B11-AA3C-C008097050F3}|ModelosExportacion\\ModelosExportacion.csproj|c:\\users\\paramf01\\desktop\\migracion\\repo\\modelosexportacion\\exportarinicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B430548-3EDE-4B11-AA3C-C008097050F3}|ModelosExportacion\\ModelosExportacion.csproj|solutionrelative:modelosexportacion\\exportarinicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B430548-3EDE-4B11-AA3C-C008097050F3}|ModelosExportacion\\ModelosExportacion.csproj|c:\\users\\cjuarez\\desktop\\migracion varicent 9 - 10\\exportacion\\exportacion\\modelosexportacion\\funciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B430548-3EDE-4B11-AA3C-C008097050F3}|ModelosExportacion\\ModelosExportacion.csproj|solutionrelative:modelosexportacion\\funciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\Exportacion\\bin\\Debug\\net8.0\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\Exportacion\\bin\\Debug\\net8.0\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Exportacion\\bin\\Debug\\net8.0\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B430548-3EDE-4B11-AA3C-C008097050F3}|ModelosExportacion\\ModelosExportacion.csproj|c:\\users\\cjuarez\\desktop\\migracion varicent 9 - 10\\exportacion\\exportacion\\modelosexportacion\\configuracionesappsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B430548-3EDE-4B11-AA3C-C008097050F3}|ModelosExportacion\\ModelosExportacion.csproj|c:\\users\\paramf01\\desktop\\migracion\\repo\\modelosexportacion\\funciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B430548-3EDE-4B11-AA3C-C008097050F3}|ModelosExportacion\\ModelosExportacion.csproj|solutionrelative:modelosexportacion\\funciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B430548-3EDE-4B11-AA3C-C008097050F3}|ModelosExportacion\\ModelosExportacion.csproj|c:\\users\\paramf01\\desktop\\migracion\\repo\\modelosexportacion\\configuracionesappsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B430548-3EDE-4B11-AA3C-C008097050F3}|ModelosExportacion\\ModelosExportacion.csproj|solutionrelative:modelosexportacion\\configuracionesappsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14340809-F785-4414-AEE3-4132DCD8E1DD}|Exportacion\\Exportacion.csproj|c:\\users\\cjuarez\\desktop\\migracion varicent 9 - 10\\exportacion\\exportacion\\exportacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14340809-F785-4414-AEE3-4132DCD8E1DD}|Exportacion\\Exportacion.csproj|c:\\users\\paramf01\\desktop\\migracion\\repo\\exportacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14340809-F785-4414-AEE3-4132DCD8E1DD}|Exportacion\\Exportacion.csproj|solutionrelative:exportacion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14340809-F785-4414-AEE3-4132DCD8E1DD}|Exportacion\\Exportacion.csproj|c:\\users\\cjuarez\\desktop\\migracion varicent 9 - 10\\exportacion\\exportacion\\exportacion\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14340809-F785-4414-AEE3-4132DCD8E1DD}|Exportacion\\Exportacion.csproj|c:\\users\\paramf01\\desktop\\migracion\\repo\\exportacion\\configuraciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14340809-F785-4414-AEE3-4132DCD8E1DD}|Exportacion\\Exportacion.csproj|solutionrelative:exportacion\\configuraciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{332B2771-EA1F-4197-9837-B0BE5F7E3414}|SFTPService\\SFTPService.csproj|c:\\users\\paramf01\\desktop\\migracion\\repo\\sftpservice\\sftpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{332B2771-EA1F-4197-9837-B0BE5F7E3414}|SFTPService\\SFTPService.csproj|solutionrelative:sftpservice\\sftpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14340809-F785-4414-AEE3-4132DCD8E1DD}|Exportacion\\Exportacion.csproj|c:\\users\\paramf01\\desktop\\migracion\\repo\\exportacion\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14340809-F785-4414-AEE3-4132DCD8E1DD}|Exportacion\\Exportacion.csproj|solutionrelative:exportacion\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,29 +42,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Configuraciones.cs",
+              "DocumentMoniker": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\Exportacion\\Configuraciones.cs",
+              "RelativeDocumentMoniker": "Exportacion\\Configuraciones.cs",
+              "ToolTip": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\Exportacion\\Configuraciones.cs",
+              "RelativeToolTip": "Exportacion\\Configuraciones.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T16:14:00.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SftpService.cs",
+              "DocumentMoniker": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\SFTPService\\SftpService.cs",
+              "RelativeDocumentMoniker": "SFTPService\\SftpService.cs",
+              "ToolTip": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\SFTPService\\SftpService.cs",
+              "RelativeToolTip": "SFTPService\\SftpService.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAMwFMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T23:00:29.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Worker.cs",
-              "DocumentMoniker": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\Exportacion\\Worker.cs",
+              "DocumentMoniker": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\Exportacion\\Worker.cs",
               "RelativeDocumentMoniker": "Exportacion\\Worker.cs",
-              "ToolTip": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\Exportacion\\Worker.cs",
+              "ToolTip": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\Exportacion\\Worker.cs",
               "RelativeToolTip": "Exportacion\\Worker.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAlwGQAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-24T01:21:31.609Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\Exportacion\\bin\\Debug\\net8.0\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\Exportacion\\bin\\Debug\\net8.0\\appsettings.json",
               "RelativeDocumentMoniker": "Exportacion\\bin\\Debug\\net8.0\\appsettings.json",
-              "ToolTip": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\Exportacion\\bin\\Debug\\net8.0\\appsettings.json",
+              "ToolTip": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\Exportacion\\bin\\Debug\\net8.0\\appsettings.json",
               "RelativeToolTip": "Exportacion\\bin\\Debug\\net8.0\\appsettings.json",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-01-22T20:25:24.425Z",
               "EditorCaption": ""
@@ -65,35 +98,37 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\Exportacion\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\Exportacion\\Program.cs",
               "RelativeDocumentMoniker": "Exportacion\\Program.cs",
-              "ToolTip": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\Exportacion\\Program.cs",
+              "ToolTip": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\Exportacion\\Program.cs",
               "RelativeToolTip": "Exportacion\\Program.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAYwEsAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAhwCEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T16:41:15.664Z"
+              "WhenOpened": "2024-10-23T16:41:15.664Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "configuracionesAppSettings.cs",
-              "DocumentMoniker": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\ModelosExportacion\\configuracionesAppSettings.cs",
+              "DocumentMoniker": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\ModelosExportacion\\configuracionesAppSettings.cs",
               "RelativeDocumentMoniker": "ModelosExportacion\\configuracionesAppSettings.cs",
-              "ToolTip": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\ModelosExportacion\\configuracionesAppSettings.cs",
+              "ToolTip": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\ModelosExportacion\\configuracionesAppSettings.cs",
               "RelativeToolTip": "ModelosExportacion\\configuracionesAppSettings.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAUwBEAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAnwC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T00:50:46.292Z"
+              "WhenOpened": "2025-01-24T00:50:46.292Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Funciones.cs",
-              "DocumentMoniker": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\ModelosExportacion\\Funciones.cs",
+              "DocumentMoniker": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\ModelosExportacion\\Funciones.cs",
               "RelativeDocumentMoniker": "ModelosExportacion\\Funciones.cs",
-              "ToolTip": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\ModelosExportacion\\Funciones.cs",
+              "ToolTip": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\ModelosExportacion\\Funciones.cs",
               "RelativeToolTip": "ModelosExportacion\\Funciones.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAowFwAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAQwE4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-27T17:32:36.211Z",
               "EditorCaption": ""
@@ -102,11 +137,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ExportarInicio.cs",
-              "DocumentMoniker": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\ModelosExportacion\\ExportarInicio.cs",
+              "DocumentMoniker": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\ModelosExportacion\\ExportarInicio.cs",
               "RelativeDocumentMoniker": "ModelosExportacion\\ExportarInicio.cs",
-              "ToolTip": "C:\\Users\\cjuarez\\Desktop\\Migracion Varicent 9 - 10\\Exportacion\\Exportacion\\ModelosExportacion\\ExportarInicio.cs",
+              "ToolTip": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\ModelosExportacion\\ExportarInicio.cs",
               "RelativeToolTip": "ModelosExportacion\\ExportarInicio.cs",
-              "ViewState": "AgIAABoBAAAAAAAAAAAqwEEBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAqwI4AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T16:42:08.828Z",
               "EditorCaption": ""

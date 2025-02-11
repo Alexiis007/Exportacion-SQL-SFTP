@@ -1,0 +1,9 @@
+INFO - 10/02/2025 12:58:39 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar Data
+
+ERROR - 10/02/2025 12:58:39 p. m.
+Mensaje: DownloadCSV: Error - El archivo 'prueba.txt' no se pudo descargar del modelo TablasToReplicaICM_DB del SFTP.
+Method not found: 'System.Collections.Generic.IEnumerable`1<Renci.SshNet.Sftp.SftpFile> Renci.SshNet.SftpClient.ListDirectory(System.String, System.Action`1<Int32>)'.
+Detalles: SFTPService
+

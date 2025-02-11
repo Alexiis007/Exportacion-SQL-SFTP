@@ -1,0 +1,54 @@
+INFO - 05/02/2025 11:14:34 a. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 05/02/2025 11:14:35 a. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 05/02/2025 11:14:35 a. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 05/02/2025 11:14:35 a. m.
+Mensaje:  =========================================== 
+Heineken.UnidadesOrganizativas
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 05/02/2025 11:14:36 a. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 05/02/2025 11:14:36 a. m.
+Mensaje: ExportToCSV: Error - La tabla 'Heineken.UnidadesOrganizativas'.
+FastDynamicObject does not contain a definition for '[ORGEH, 00000003]'.
+Detalles:    at CsvHelper.FastDynamicObject.System.Collections.Generic.IDictionary<System.String,System.Object>.get_Item(String key)
+   at ModelosExportacion.Funciones.ExportCSV(DataTable tabla, String NombreTabla, String RutaDestino) in C:\Users\PARAMF01\Desktop\Migracion\Repo\ModelosExportacion\Funciones.cs:line 148
+
+INFO - 05/02/2025 11:14:36 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 05/02/2025 11:14:48 a. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 05/02/2025 11:14:48 a. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 05/02/2025 11:14:48 a. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 05/02/2025 11:14:48 a. m.
+Mensaje:  =========================================== 
+Heineken.UnidadesOrganizativas
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 05/02/2025 11:14:49 a. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+

@@ -1,0 +1,76 @@
+INFO - 05/02/2025 02:29:09 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 05/02/2025 02:29:10 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 05/02/2025 02:29:10 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 05/02/2025 02:29:10 p. m.
+Mensaje:  =========================================== 
+Heineken.UnidadesOrganizativas
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 05/02/2025 02:29:11 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 05/02/2025 02:29:12 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.UnidadesOrganizativas' exportada a csv con 5249 filas
+Detalles: 
+
+INFO - 05/02/2025 02:29:12 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 05/02/2025 02:29:17 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 05/02/2025 02:29:17 p. m.
+Mensaje: Fecha Termino:  05/02/2025 02:29:17 p. m.
+Detalles: Proceso Terminado
+
+INFO - 05/02/2025 02:29:21 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 05/02/2025 02:29:22 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 05/02/2025 02:29:22 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 05/02/2025 02:29:22 p. m.
+Mensaje:  =========================================== 
+Heineken.UnidadesOrganizativas
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 05/02/2025 02:29:23 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 05/02/2025 02:29:23 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.UnidadesOrganizativas' exportada a csv con 5249 filas
+Detalles: 
+
+INFO - 05/02/2025 02:29:23 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 05/02/2025 02:29:28 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 05/02/2025 02:29:28 p. m.
+Mensaje: Fecha Termino:  05/02/2025 02:29:28 p. m.
+Detalles: Proceso Terminado
+
