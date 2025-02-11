@@ -74,10 +74,10 @@ namespace Exportacion
             
             ExportarInicio exp = new ExportarInicio(config);
 
-            await exp.ExportarArchivosAsyncToSFTP();
+            //await exp.ExportarArchivosAsyncToSFTP();
 
-            //Console.WriteLine("Exportacion de modelos SFTP a SQL \n");
-            //await exp.ExportarArchivosAsyncToSQL();
+            Console.WriteLine("Exportacion de modelos SFTP a SQL \n");
+            await exp.ExportarArchivosAsyncToSQL();
 
         }
     
