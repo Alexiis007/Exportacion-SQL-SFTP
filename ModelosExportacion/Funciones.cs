@@ -76,54 +76,52 @@ namespace ModelosExportacion
                         //Nombres archivos CSV ubicados en la ruta
                         string[] ArchivosCSV = Directory.GetFiles(ruta, "*.csv");
 
-                        foreach (var file in ArchivosCSV)
-                        {                          
-                            //Cargamos el archivo CSV con el reader (archivo de lectura)
-                            var reader = new StreamReader(file);
+                        //Cargamos el archivo CSV con el reader (archivo de lectura)
+                        var reader = new StreamReader(RutaDestino);
 
-                            //Cargamos el archivo reader como como un archivo de tipo csv de solo lectura
-                            var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture));
+                        //Cargamos el archivo reader como como un archivo de tipo csv de solo lectura
+                        var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture));
 
-                            //Obtenemos la filas con un tipo de valor de retorno dynamic
-                            //Y ese retorno lo pasamos a una lista con la funcion ToList()
-                            var filas = csv.GetRecords<dynamic>().ToList();
+                        //Obtenemos la filas con un tipo de valor de retorno dynamic
+                        //Y ese retorno lo pasamos a una lista con la funcion ToList()
+                        var filas = csv.GetRecords<dynamic>().ToList();
 
-                            //Recoremos la lista de filas del csv
-                            foreach (var fila in filas)
+                        //Recoremos la lista de filas del csv
+                        foreach (var fila in filas)
+                        {
+                            var diccionarioFila = fila as IDictionary<string, object>;
+                            //Recorremos las columnas de esta fila
+                            foreach (var col in diccionarioFila)
                             {
-                                var diccionarioFila = fila as IDictionary<string, object>;
-                                //Recorremos las columnas de esta fila
-                                foreach (var col in diccionarioFila)
+                                //Verificamos el tipo de dato de la col
+                                // Si es de tipo DateTime lo pasamos a Date
+                                if (col.Value is string colValue && DateTime.TryParseExact(colValue, "dd/MM/yyyy hh:mm:ss tt", new CultureInfo("es-ES"), DateTimeStyles.None, out DateTime fecha))
                                 {
-                                    //Verificamos el tipo de dato de la col
-                                    // Si es de tipo DateTime lo pasamos a Date
-                                    if (col.Value is string colValue && DateTime.TryParseExact(colValue, "dd/MM/yyyy hh:mm:ss tt", new CultureInfo("es-ES"), DateTimeStyles.None, out DateTime fecha))
-                                    {
-                                        diccionarioFila[col.Key] = fecha.ToString("dd/MM/yyyy");
+                                    diccionarioFila[col.Key] = fecha.ToString("dd/MM/yyyy");
 
-                                        // Si el año pasa del 9998 se cambia a 9998 
-                                        int año = int.Parse(diccionarioFila[col.Key].ToString().Split("/")[2]);
-                                        if (año > 9998)
-                                        {
-                                            DateTime fechaPredeterminada = new DateTime(9998, 1, 1); // Fecha predeterminada
-                                            diccionarioFila[col.Key] = fechaPredeterminada.ToString("dd/MM/yyyy");
-                                        }
+                                    // Si el año pasa del 9998 se cambia a 9998 
+                                    int año = int.Parse(diccionarioFila[col.Key].ToString().Split("/")[2]);
+                                    if (año > 9998)
+                                    {
+                                        DateTime fechaPredeterminada = new DateTime(9998, 1, 1); // Fecha predeterminada
+                                        diccionarioFila[col.Key] = fechaPredeterminada.ToString("dd/MM/yyyy");
                                     }
                                 }
                             }
-
-                            reader.Close();
-
-                            //----- Guardamos el archivo csv -----
-                            // abrimos el archivo csv en escritura
-                            var writer = new StreamWriter(file);
-                            // convertimos ese archivo de escritura a un archivo csv de escritura
-                            var CsvWriter = new CsvWriter(writer, new CsvConfiguration(CultureInfo.InvariantCulture));
-                            //Ahora modificamos el archivo csv pasandole todas las filas modificadas
-                            CsvWriter.WriteRecords(filas);
-                            writer.Close();
-
                         }
+
+                        reader.Close();
+
+                        //----- Guardamos el archivo csv -----
+                        // abrimos el archivo csv en escritura
+                        var writer = new StreamWriter(RutaDestino);
+                        // convertimos ese archivo de escritura a un archivo csv de escritura
+                        var CsvWriter = new CsvWriter(writer, new CsvConfiguration(CultureInfo.InvariantCulture));
+                        //Ahora modificamos el archivo csv pasandole todas las filas modificadas
+                        CsvWriter.WriteRecords(filas);
+                        writer.Close();
+
+                        
 
                         mensaje = "ExportToCSV: Tabla '" + NombreTabla + "' exportada a csv con " + tabla.Rows.Count.ToString() + " filas";
                         Console.WriteLine(mensaje);
@@ -135,8 +133,7 @@ namespace ModelosExportacion
                     catch (Exception ex)
                     {
 
-                        mensaje = "ExportToCSV: Error - La tabla '" + NombreTabla + "'.\n"
-                                               + ex.Message;
+                        mensaje = "ExportToCSV: Error - La tabla '" + NombreTabla + "'.\n" + ex.Message;
                         Console.WriteLine(mensaje);
 
                         respInt.correcto = false;
