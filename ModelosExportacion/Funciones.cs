@@ -22,6 +22,10 @@ using System.Drawing;
 using Renci.SshNet;
 using System.Reflection;
 using System.Collections;
+using System.Data.Common;
+using static OfficeOpenXml.ExcelErrorValue;
+using Microsoft.VisualBasic.FileIO;
+
 
 
 namespace ModelosExportacion
@@ -121,7 +125,7 @@ namespace ModelosExportacion
                         CsvWriter.WriteRecords(filas);
                         writer.Close();
 
-                        
+
 
                         mensaje = "ExportToCSV: Tabla '" + NombreTabla + "' exportada a csv con " + tabla.Rows.Count.ToString() + " filas";
                         Console.WriteLine(mensaje);
@@ -183,7 +187,7 @@ namespace ModelosExportacion
             var archivosConfigurados = configApp.GetSection(model).Get<List<string>>();
 
             // Obtener todos los archivos .csv en la carpeta de origen
-            string[] allfiles = Directory.GetFiles(CarpetaOrigen, "*.csv", SearchOption.AllDirectories);
+            string[] allfiles = Directory.GetFiles(CarpetaOrigen, "*.csv", System.IO.SearchOption.AllDirectories);
 
             // Filtrar solo los archivos que estén en la lista configurada
             var archivosFiltrados = allfiles.Where(file => archivosConfigurados.Contains(Path.GetFileName(file))).ToArray();
@@ -193,13 +197,11 @@ namespace ModelosExportacion
                 try
                 {
                     var testFile = Path.Combine(CarpetaOrigen, item);
-                    //var testFile = Path.Combine("C:\\Destino", item);
 
                     string[] cadenas = item.Split("\\");
                     string nombre_archivo = cadenas[cadenas.Length - 1];
 
-                    //string archivosftp = Path.Combine(CarpetaDestino, nombre_archivo);
-                    string archivosftp = Path.Combine("//Data//", nombre_archivo);
+                    string archivosftp = Path.Combine(CarpetaDestino, nombre_archivo).Replace("\\", "/");
 
                     sftpService.UploadFile(testFile, archivosftp);
 
@@ -217,12 +219,10 @@ namespace ModelosExportacion
                     respInt.correcto = false;
                     respInt.mensaje = mensaje;
                     respInt.detalle = ex.Source;
-
                 }
 
             }
             return respInt;
-
         }
 
         // Descarga CSVs del SFTP a carpeta local
@@ -235,7 +235,7 @@ namespace ModelosExportacion
             string mensaje = "";
 
             var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory()) 
+                .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
             IConfiguration configApp = builder.Build();
 
@@ -253,7 +253,7 @@ namespace ModelosExportacion
                     try
                     {
 
-                        sftpService.DownloadFile(CarpetaOrigen+"|"+ file, CarpetaDestino);
+                        sftpService.DownloadFile(CarpetaOrigen + "|" + file, CarpetaDestino);
 
                         mensaje = "DownloadCSV: El archivo '" + file + "' del modelo " + model + " fue descargado con exito.";
 
@@ -285,8 +285,9 @@ namespace ModelosExportacion
         {
             RespuestaInterna respInt = new RespuestaInterna();
             string mensaje = "";
-
             List<String> files = Directory.GetFiles(ubiRutaCarpetaDestinoTablasToSQL, "*.csv").ToList();
+            System.Data.DataTable dt = new System.Data.DataTable();
+
             if (files.Count > 0)
             {
                 foreach (String file in files)
@@ -299,64 +300,69 @@ namespace ModelosExportacion
                     try
                     {
                         var reader = new StreamReader(file);
-
                         var archivo = new CsvReader(reader, config);
-
                         var filas = archivo.GetRecords<dynamic>().ToList();
-
-                        string tabla = file.Replace(".csv", "");
-                        List<string> AllDataInsert = new List<string>();
 
                         if (filas.Count > 0)
                         {
-                            // Convertir la fila a IDictionary<string, object> para poder acceder a las claves
-                            var firstRow = filas[0] as IDictionary<string, object>;
-                            if (firstRow != null)
-                            {
-                                // Recorrer las claves del diccionario (nombres de las columnas)
-                                string cols = "";
-                                foreach (var column in firstRow.Keys)
-                                {
-                                    cols += column + ",";
-                                }
-                                AllDataInsert.Add("INSERT INTO " + "ReplicaICM_MNF" + "(" + cols.Substring(0, cols.Length - 1) + ") VALUES");
-                            }
                             foreach (var fila in filas)
-                            {
+                            {                                
                                 var dictionaryRow = fila as IDictionary<string, object>;
                                 if (dictionaryRow != null)
                                 {
-                                    string insertValues = "(";
                                     foreach (var column in dictionaryRow)
                                     {
                                         //If para cambiar el formato de varicent dd/MM/yyyy a el de SQL yyyy-mm-dd
                                         if (column.Value is string colValue && DateTime.TryParseExact(colValue, "d/M/yyyy", new CultureInfo("es-ES"), DateTimeStyles.None, out DateTime fecha))
                                         {
-                                            insertValues += "\'" + fecha.ToString("yyyy-MM-dd") + "\',";
-                                        }
-                                        else
-                                        {
-                                            insertValues += "\'" + column.Value + "\',";
+                                            dictionaryRow[column.Key] = fecha.ToString("yyyy-MM-dd");
                                         }
                                     }
-                                    insertValues = insertValues.Substring(0, insertValues.Length - 1);
-                                    insertValues += "),";
-                                    AllDataInsert.Add(insertValues);
                                 }
-                            }
-                            string ultimaCadena = AllDataInsert[AllDataInsert.Count - 1];
-                            AllDataInsert[AllDataInsert.Count - 1] = AllDataInsert[AllDataInsert.Count - 1].Substring(0, ultimaCadena.Length - 1) + ';';
+                            };
                         }
                         else
                         {
                             Console.WriteLine("La tabla no tiene ninguna Fila.");
                         }
-                        foreach (var a in AllDataInsert)
-                        {
-                            Console.WriteLine(a);
-                        }
-
                         reader.Close();
+
+                        // Aplicamos lo cambios en el CSV
+                        var writer = new StreamWriter(file);
+                        var CsvWriter = new CsvWriter(writer, config);
+                        CsvWriter.WriteRecords(filas);
+                        writer.Close();
+
+                        using (TextFieldParser parser = new TextFieldParser(file))
+                        {
+                            parser.TextFieldType = FieldType.Delimited;
+                            parser.SetDelimiters(";");
+
+                            // Leer la primera línea con los nombres de las columnas
+                            string[] columnNames = parser.ReadFields();
+                            foreach (var column in columnNames)
+                            {
+                                dt.Columns.Add(column);
+                            }
+
+                            // Leer las filas de datos
+                            while (!parser.EndOfData)
+                            {
+                                string[] fields = parser.ReadFields();
+
+                                for (int i = 0; i < fields.Length; i++)
+                                {
+    
+                                    if (string.IsNullOrWhiteSpace(fields[i])) 
+                                    {
+                                        fields[i] = null; 
+                                    }
+                                }
+
+                                dt.Rows.Add(fields);
+                            }
+                        }
+                        ExecuteQuery(dt, "ReplicaICM_MNF", bdcnServer, bdcnBD, bdcnUsuario, bdcnContraseña);
 
                         mensaje = "Procesamiento CsvToQuery: El archivo '" + file + "' fue convertido a Query con exito.";
                         Console.WriteLine(mensaje);
@@ -381,27 +387,30 @@ namespace ModelosExportacion
                 respInt.mensaje = mensaje;
             }
             return respInt;
-        }
+        }     
 
-        public static void ExecuteQuery(string query, string bdcnServer, string bdcnBD, string bdcnUsuario, string bdcnContraseña)
+        public static void ExecuteQuery(System.Data.DataTable dt, string tabla, string bdcnServer, string bdcnBD, string bdcnUsuario, string bdcnContraseña)
         {
             try
             {
                 string connString = "Server="+bdcnServer+";Database="+bdcnBD+";User Id="+bdcnUsuario+";Password="+bdcnContraseña+";";
                 using (SqlConnection conn = new SqlConnection())
                 {
-                    SqlCommand command = new SqlCommand(query, conn);
+                    conn.ConnectionString = connString;
 
                     try
                     {
                         conn.Open();
 
-                        int rowsAffected = command.ExecuteNonQuery();
-                        Console.WriteLine($"Filas insertadas: {rowsAffected}");
+                        using (SqlBulkCopy bulkCopy = new SqlBulkCopy(conn))
+                        {
+                            bulkCopy.DestinationTableName = tabla; // Nombre de la tabla de destino
+                            bulkCopy.WriteToServer(dt); // Inserta los datos en la tabla
+                        }
                     }
                     catch(Exception ex)
                     {
-                        Console.WriteLine("Error"+ ex.Message);
+                        Console.WriteLine("Error: "+ ex.Message);
                     }
                 }
             }

@@ -27,10 +27,7 @@ namespace Exportacion
             {
                 Console.WriteLine("Error al obtener el parametro : " + subgrupo + ", " +ex.InnerException.Message + ", " + ex.InnerException.InnerException + "\n");
                 throw new Exception("Error al obtener el parametro : " + subgrupo, ex);                     
-            }
-
-
-            
+            }            
         }
     }
 }

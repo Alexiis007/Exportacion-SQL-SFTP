@@ -1,0 +1,82 @@
+INFO - 12/02/2025 12:00:08 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 12/02/2025 12:00:09 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 12/02/2025 12:00:09 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 12/02/2025 12:00:09 p. m.
+Mensaje:  =========================================== 
+ Heineken.AreasPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 12/02/2025 12:00:10 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 12/02/2025 12:00:10 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.AreasPersonal' exportada a csv con 357 filas
+Detalles: 
+
+INFO - 12/02/2025 12:00:10 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 12/02/2025 12:00:10 p. m.
+Mensaje:  =========================================== 
+ Heineken.AbsentismosNomina
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 12/02/2025 12:00:15 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 12/02/2025 12:00:22 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.AbsentismosNomina' exportada a csv con 83825 filas
+Detalles: 
+
+INFO - 12/02/2025 12:00:22 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 12/02/2025 12:00:22 p. m.
+Mensaje:  =========================================== 
+ Heineken.vw_CatalogoGlobal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 12/02/2025 12:00:22 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 12/02/2025 12:00:22 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.vw_CatalogoGlobal' exportada a csv con 925 filas
+Detalles: 
+
+INFO - 12/02/2025 12:00:22 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 12/02/2025 12:01:48 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 12/02/2025 12:01:48 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 12/02/2025 12:01:48 p. m.
+Mensaje: 
+Detalles: 
+
+INFO - 12/02/2025 12:01:48 p. m.
+Mensaje: Fecha Termino:  12/02/2025 12:01:48 p. m.
+Detalles: Proceso Terminado
+

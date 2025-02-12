@@ -78,7 +78,6 @@ namespace Exportacion
 
             Console.WriteLine("Exportacion de modelos SFTP a SQL \n");
             await exp.ExportarArchivosAsyncToSQL();
-
         }
     
     }

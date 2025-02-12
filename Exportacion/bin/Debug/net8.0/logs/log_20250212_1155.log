@@ -1,0 +1,72 @@
+INFO - 12/02/2025 11:55:51 a. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 12/02/2025 11:55:52 a. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 12/02/2025 11:55:52 a. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 12/02/2025 11:55:52 a. m.
+Mensaje:  =========================================== 
+ Heineken.AreasPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 12/02/2025 11:55:52 a. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 12/02/2025 11:55:52 a. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.AreasPersonal' exportada a csv con 357 filas
+Detalles: 
+
+INFO - 12/02/2025 11:55:52 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 12/02/2025 11:55:53 a. m.
+Mensaje:  =========================================== 
+ Heineken.AbsentismosNomina
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 12/02/2025 11:56:09 a. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 12/02/2025 11:56:17 a. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.AbsentismosNomina' exportada a csv con 83825 filas
+Detalles: 
+
+INFO - 12/02/2025 11:56:17 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 12/02/2025 11:56:17 a. m.
+Mensaje:  =========================================== 
+ Heineken.vw_CatalogoGlobal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 12/02/2025 11:56:17 a. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 12/02/2025 11:56:17 a. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.vw_CatalogoGlobal' exportada a csv con 925 filas
+Detalles: 
+
+INFO - 12/02/2025 11:56:17 a. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 12/02/2025 11:56:17 a. m.
+Mensaje:  =========================================== 
+ Heineken.MovimientosPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
