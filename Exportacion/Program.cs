@@ -20,14 +20,8 @@ using System.Runtime.Serialization;
 
 namespace Exportacion
 {
-    enum TipoProceso
-    {
-        Automatico =1,
-        Manual = 2
-    }
     class Program
     {
-
         static async Task Main(string[] args)
         {                 
             Configuraciones _config = new Configuraciones();
@@ -74,9 +68,10 @@ namespace Exportacion
             
             ExportarInicio exp = new ExportarInicio(config);
 
+            // Proceso Exportacion SQL To Varicent
             //await exp.ExportarArchivosAsyncToSFTP();
 
-            Console.WriteLine("Exportacion de modelos SFTP a SQL \n");
+            // Proceso Exportacion Varicent To SQL
             await exp.ExportarArchivosAsyncToSQL();
         }
     

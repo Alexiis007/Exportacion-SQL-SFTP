@@ -21,6 +21,7 @@ namespace Exportacion
                     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
                 IConfiguration config = builder.Build();
+
                 return config.GetSection(grupo + ":" + subgrupo).Value.ToString();           
             }
             catch (Exception ex)

@@ -25,6 +25,7 @@ using System.Collections;
 using System.Data.Common;
 using static OfficeOpenXml.ExcelErrorValue;
 using Microsoft.VisualBasic.FileIO;
+using static Org.BouncyCastle.Crypto.Engines.SM2Engine;
 
 
 
@@ -226,13 +227,10 @@ namespace ModelosExportacion
         }
 
         // Descarga CSVs del SFTP a carpeta local
-        public static async Task<RespuestaInterna> DownloadCSV(string CarpetaOrigen, string CarpetaDestino, SftpConfig config, string model)
+        public static async Task DownloadCSV(string CarpetaOrigen, string CarpetaDestino, SftpConfig config, string model)
         {
 
             var sftpService = new SftpService(new NullLogger<SftpService>(), config);
-
-            RespuestaInterna respInt = new RespuestaInterna();
-            string mensaje = "";
 
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
@@ -252,23 +250,12 @@ namespace ModelosExportacion
                 {
                     try
                     {
-
                         sftpService.DownloadFile(CarpetaOrigen + "|" + file, CarpetaDestino);
-
-                        mensaje = "DownloadCSV: El archivo '" + file + "' del modelo " + model + " fue descargado con exito.";
-
-                        Console.WriteLine(mensaje);
-                        respInt.correcto = true;
-                        respInt.mensaje = "";
-                        respInt.detalle = "";
+                        Console.WriteLine("DownloadCSV: El archivo '" + file + "' del modelo " + model + " fue descargado con exito.");
                     }
                     catch (Exception ex)
                     {
-                        mensaje = "DownloadCSV: Error - El archivo '" + file + "' no se pudo descargar del modelo " + model + " del SFTP.\n" + ex.Message;
-                        respInt.correcto = false;
-                        respInt.mensaje = mensaje;
-                        respInt.detalle = ex.Source;
-
+                        Console.WriteLine("DownloadCSV: Error - El archivo '" + file + "' no se pudo descargar del modelo " + model + " del SFTP.\n" + ex.Message);
                     }
                 }
             }
@@ -276,22 +263,21 @@ namespace ModelosExportacion
             {
                 Console.WriteLine("No se han agregado tablas para migrar a SQL");
             }
-
-            return respInt;
-
         }
 
         public static RespuestaInterna CSVToQuery(string ubiRutaCarpetaDestinoTablasToSQL, string bdcnServer, string bdcnBD, string bdcnUsuario, string bdcnContraseña)
         {
             RespuestaInterna respInt = new RespuestaInterna();
             string mensaje = "";
-            List<String> files = Directory.GetFiles(ubiRutaCarpetaDestinoTablasToSQL, "*.csv").ToList();
-            System.Data.DataTable dt = new System.Data.DataTable();
+            List<String> files = Directory.GetFiles(ubiRutaCarpetaDestinoTablasToSQL, "*.csv").ToList();         
 
             if (files.Count > 0)
             {
                 foreach (String file in files)
                 {
+                    System.Data.DataTable dt = new System.Data.DataTable();
+                    string nombreTabla = file.Split("\\").Last().Split("-")[0];
+
                     var config = new CsvConfiguration(CultureInfo.InvariantCulture)
                     {
                         Delimiter = ";",
@@ -362,23 +348,53 @@ namespace ModelosExportacion
                                 dt.Rows.Add(fields);
                             }
                         }
-                        ExecuteQuery(dt, "ReplicaICM_MNF", bdcnServer, bdcnBD, bdcnUsuario, bdcnContraseña);
 
-                        mensaje = "Procesamiento CsvToQuery: El archivo '" + file + "' fue convertido a Query con exito.";
-                        Console.WriteLine(mensaje);
-                        respInt.correcto = true;
-                        respInt.mensaje = "";
-                        respInt.detalle = "";
+                        bool resInsert = false;
+                        string tblInsert = "";
+
+                        if (nombreTabla.Contains("Manufactura"))
+                        {
+                            resInsert = ExecuteQuery(dt, "ReplicaICM_MNF", bdcnServer, bdcnBD, bdcnUsuario, bdcnContraseña);
+                            tblInsert = "ReplicaICM_MNF";
+                        }
+                        else if (nombreTabla.Contains("Quincenal"))
+                        {
+                            resInsert = ExecuteQuery(dt, "ReplicaICM_COM", bdcnServer, bdcnBD, bdcnUsuario, bdcnContraseña);
+                            tblInsert = "ReplicaICM_COM";
+                        }
+                        else if (nombreTabla.Contains("Catorcenal"))
+                        {
+                            resInsert = ExecuteQuery(dt, "ReplicaICM_CAT", bdcnServer, bdcnBD, bdcnUsuario, bdcnContraseña);
+                            tblInsert = "ReplicaICM_CAT";
+                        }
+                        else { Console.WriteLine("El archivo "+ nombreTabla +" no contiene entre su nombre algunas de las palabras clave (Catorcenal, Quincenal o Manufactura)"); }
+
+                        mensaje = "CsvToQuery: El archivo '" + nombreTabla + "' fue migrado con exito a la tabla "+ tblInsert +" ";
+
+                        if (resInsert)
+                        {
+                            Console.WriteLine(mensaje);
+                            respInt.correcto = true;
+                            respInt.mensaje = "";
+                            respInt.detalle = "";
+                        }
+                        else
+                        {
+                            mensaje = "CsvToQuery Error: El archivo '" + nombreTabla + "' no pudo ser migrado debido a algun posible error en la insercion.";
+                            Console.WriteLine(mensaje);
+                            respInt.correcto = false;
+                            respInt.mensaje = mensaje;
+                        }
                     }
                     catch (Exception ex)
                     {
-                        mensaje = "Procesamiento CsvToQuery: Error - El archivo '" + file + "' no pudo ser convertido a Query.\n" + ex.Message;
+                        mensaje = "CsvToQuery Error: El archivo '" + nombreTabla + "' no pudo ser migrado debido a algun posible error." + ex.Message;
                         respInt.correcto = false;
                         respInt.mensaje = mensaje;
                         respInt.detalle = ex.Source;
-
                     }
                 }
+
             }
             else
             {
@@ -389,35 +405,28 @@ namespace ModelosExportacion
             return respInt;
         }     
 
-        public static void ExecuteQuery(System.Data.DataTable dt, string tabla, string bdcnServer, string bdcnBD, string bdcnUsuario, string bdcnContraseña)
+        public static bool ExecuteQuery(System.Data.DataTable dt, string tabla, string bdcnServer, string bdcnBD, string bdcnUsuario, string bdcnContraseña)
         {
-            try
+            string connString = "Server="+bdcnServer+";Database="+bdcnBD+";User Id="+bdcnUsuario+";Password="+bdcnContraseña+";";
+            using (SqlConnection conn = new SqlConnection())
             {
-                string connString = "Server="+bdcnServer+";Database="+bdcnBD+";User Id="+bdcnUsuario+";Password="+bdcnContraseña+";";
-                using (SqlConnection conn = new SqlConnection())
+                conn.ConnectionString = connString;
+                try
                 {
-                    conn.ConnectionString = connString;
+                    conn.Open();
 
-                    try
+                    using (SqlBulkCopy bulkCopy = new SqlBulkCopy(conn))
                     {
-                        conn.Open();
-
-                        using (SqlBulkCopy bulkCopy = new SqlBulkCopy(conn))
-                        {
-                            bulkCopy.DestinationTableName = tabla; // Nombre de la tabla de destino
-                            bulkCopy.WriteToServer(dt); // Inserta los datos en la tabla
-                        }
+                        bulkCopy.DestinationTableName = tabla; 
+                        bulkCopy.WriteToServer(dt); 
                     }
-                    catch(Exception ex)
-                    {
-                        Console.WriteLine("Error: "+ ex.Message);
-                    }
+                    return true;
                 }
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine("Error:",ex.Message);
-            }
+                catch(Exception ex)
+                {
+                    return false;
+                }
+            }        
         }
     }
 }

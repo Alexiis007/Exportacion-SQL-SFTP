@@ -294,23 +294,23 @@ namespace ModelosExportacion
                     }
 
                     RespuestaInterna ICMMNFHeinekenQA = new RespuestaInterna();
-                    //RespuestaInterna ICMCOMHeinekenQA = new RespuestaInterna();
-                    //RespuestaInterna ICMCOMCatorcenalHeinekenQA = new RespuestaInterna();
+                    RespuestaInterna ICMCOMHeinekenQA = new RespuestaInterna();
+                    RespuestaInterna ICMCOMCatorcenalHeinekenQA = new RespuestaInterna();
 
                     ICMMNFHeinekenQA = await Funciones.ExportarFTP(ubiRutaCarpetaLocal, ubiRutaCarpetaDestino, ICMMNFHeinekenQA_SFTP, "ICMMNFHeinekenQA_Tablas");
-                    //ICMCOMHeinekenQA = await Funciones.ExportarFTP(ubiRutaCarpetaLocal, ubiRutaCarpetaDestino, ICMCOMHeinekenQA_SFTP, "ICMCOMHeinekenQA_Tablas");
-                    //ICMCOMCatorcenalHeinekenQA = await Funciones.ExportarFTP(ubiRutaCarpetaLocal, ubiRutaCarpetaDestino, ICMCOMCatorcenalHeinekenQA_SFTP, "ICMCOMCatorcenalHeinekenQA_Tablas");
+                    ICMCOMHeinekenQA = await Funciones.ExportarFTP(ubiRutaCarpetaLocal, ubiRutaCarpetaDestino, ICMCOMHeinekenQA_SFTP, "ICMCOMHeinekenQA_Tablas");
+                    ICMCOMCatorcenalHeinekenQA = await Funciones.ExportarFTP(ubiRutaCarpetaLocal, ubiRutaCarpetaDestino, ICMCOMCatorcenalHeinekenQA_SFTP, "ICMCOMCatorcenalHeinekenQA_Tablas");
 
 
                     Console.WriteLine(ICMMNFHeinekenQA.mensaje);
                     log.Escribe(ICMMNFHeinekenQA.correcto ? LogType.INFO : LogType.ERROR, ICMMNFHeinekenQA.mensaje, ICMMNFHeinekenQA.detalle);
-                    //Console.WriteLine("===========================================");
-                    //Console.WriteLine(ICMCOMHeinekenQA.mensaje);
-                    //log.Escribe(ICMCOMHeinekenQA.correcto ? LogType.INFO : LogType.ERROR, ICMCOMHeinekenQA.mensaje, ICMCOMHeinekenQA.detalle);
-                    //Console.WriteLine("===========================================");
-                    //Console.WriteLine(ICMCOMCatorcenalHeinekenQA.mensaje);
-                    //log.Escribe(ICMCOMCatorcenalHeinekenQA.correcto ? LogType.INFO : LogType.ERROR, ICMCOMCatorcenalHeinekenQA.mensaje, ICMCOMCatorcenalHeinekenQA.detalle);
-                    //Console.WriteLine("===========================================");
+                    Console.WriteLine("===========================================");
+                    Console.WriteLine(ICMCOMHeinekenQA.mensaje);
+                    log.Escribe(ICMCOMHeinekenQA.correcto ? LogType.INFO : LogType.ERROR, ICMCOMHeinekenQA.mensaje, ICMCOMHeinekenQA.detalle);
+                    Console.WriteLine("===========================================");
+                    Console.WriteLine(ICMCOMCatorcenalHeinekenQA.mensaje);
+                    log.Escribe(ICMCOMCatorcenalHeinekenQA.correcto ? LogType.INFO : LogType.ERROR, ICMCOMCatorcenalHeinekenQA.mensaje, ICMCOMCatorcenalHeinekenQA.detalle);
+                    Console.WriteLine("===========================================");
                 }
                 else
                 {
@@ -342,17 +342,18 @@ namespace ModelosExportacion
 
             LimpiarDirectorio(ubiRutaCarpetaDestinoTablasToSQL, ".csv");
 
-            RespuestaInterna resInt = new RespuestaInterna();
-
-            resInt = await Funciones.DownloadCSV(ubiRutaCarpetaOrigenTablasToSQL, ubiRutaCarpetaDestinoTablasToSQL, ICMMNFHeinekenQA_SFTP, "TablasToReplicaICM_DB");
-
-            Console.WriteLine(resInt.mensaje);
-            log.Escribe(resInt.correcto ? LogType.INFO : LogType.ERROR, resInt.mensaje, resInt.detalle);
+            // Descarga archivos de SFTP Manufactura
+            await Funciones.DownloadCSV(ubiRutaCarpetaOrigenTablasToSQL, ubiRutaCarpetaDestinoTablasToSQL, ICMMNFHeinekenQA_SFTP, "TablasManufacturaToSQL");
+            // Descarga archivos de SFTP Quincenal
+            await Funciones.DownloadCSV(ubiRutaCarpetaOrigenTablasToSQL, ubiRutaCarpetaDestinoTablasToSQL, ICMCOMHeinekenQA_SFTP, "TablasQuincenalToSQL");
+            // Descarga archivos de SFTP Catorcenal
+            await Funciones.DownloadCSV(ubiRutaCarpetaOrigenTablasToSQL, ubiRutaCarpetaDestinoTablasToSQL, ICMCOMCatorcenalHeinekenQA_SFTP, "TablasCatorcenalToSQL");
 
             Console.WriteLine("==============================================================");
             Console.WriteLine("Procesando los archivos descargados para la exportacion a SQL.");
             Console.WriteLine("==============================================================");
 
+            // Se procesan CSV para despues ser migrados por BulkCopy a la BD de SQL
             Funciones.CSVToQuery(ubiRutaCarpetaDestinoTablasToSQL, bdcnServer, bdcnBD, bdcnUsuario, bdcnContraseña);
         }
     }
