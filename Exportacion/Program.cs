@@ -69,10 +69,10 @@ namespace Exportacion
             ExportarInicio exp = new ExportarInicio(config);
 
             // Proceso Exportacion SQL To Varicent
-            //await exp.ExportarArchivosAsyncToSFTP();
+            await exp.ExportarArchivosAsyncToSFTP();
 
             // Proceso Exportacion Varicent To SQL
-            await exp.ExportarArchivosAsyncToSQL();
+            //await exp.ExportarArchivosAsyncToSQL();
         }
     
     }

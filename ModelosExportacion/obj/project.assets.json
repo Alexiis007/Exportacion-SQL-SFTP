@@ -3087,23 +3087,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PARAMF01\\.nuget\\packages\\": {},
+    "C:\\Users\\Alexsis007\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\ModelosExportacion\\ModelosExportacion.csproj",
+      "projectUniqueName": "D:\\-------Cosas-------\\Programas\\NET\\ModelosExportacion\\ModelosExportacion.csproj",
       "projectName": "ModelosExportacion",
-      "projectPath": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\ModelosExportacion\\ModelosExportacion.csproj",
-      "packagesPath": "C:\\Users\\PARAMF01\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\ModelosExportacion\\obj\\",
+      "projectPath": "D:\\-------Cosas-------\\Programas\\NET\\ModelosExportacion\\ModelosExportacion.csproj",
+      "packagesPath": "C:\\Users\\Alexsis007\\.nuget\\packages\\",
+      "outputPath": "D:\\-------Cosas-------\\Programas\\NET\\ModelosExportacion\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\PARAMF01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alexsis007\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3118,8 +3118,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\SFTPService\\SFTPService.csproj": {
-              "projectPath": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\SFTPService\\SFTPService.csproj"
+            "D:\\-------Cosas-------\\Programas\\NET\\SFTPService\\SFTPService.csproj": {
+              "projectPath": "D:\\-------Cosas-------\\Programas\\NET\\SFTPService\\SFTPService.csproj"
             }
           }
         }
@@ -3132,9 +3132,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
+        "auditMode": "all"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -3193,7 +3193,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200-preview.0.24575.35/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

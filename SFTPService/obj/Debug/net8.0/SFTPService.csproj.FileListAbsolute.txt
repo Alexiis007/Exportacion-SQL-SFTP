@@ -71,3 +71,16 @@ C:\Users\PARAMF01\Desktop\Migracion\Repo\SFTPService\obj\Debug\net8.0\SFTPServic
 C:\Users\PARAMF01\Desktop\Migracion\Repo\SFTPService\obj\Debug\net8.0\refint\SFTPService.dll
 C:\Users\PARAMF01\Desktop\Migracion\Repo\SFTPService\obj\Debug\net8.0\SFTPService.pdb
 C:\Users\PARAMF01\Desktop\Migracion\Repo\SFTPService\obj\Debug\net8.0\ref\SFTPService.dll
+D:\-------Cosas-------\Programas\NET\SFTPService\bin\Debug\net8.0\SFTPService.deps.json
+D:\-------Cosas-------\Programas\NET\SFTPService\bin\Debug\net8.0\SFTPService.dll
+D:\-------Cosas-------\Programas\NET\SFTPService\bin\Debug\net8.0\SFTPService.pdb
+D:\-------Cosas-------\Programas\NET\SFTPService\obj\Debug\net8.0\SFTPService.csproj.AssemblyReference.cache
+D:\-------Cosas-------\Programas\NET\SFTPService\obj\Debug\net8.0\SFTPService.GeneratedMSBuildEditorConfig.editorconfig
+D:\-------Cosas-------\Programas\NET\SFTPService\obj\Debug\net8.0\SFTPService.AssemblyInfoInputs.cache
+D:\-------Cosas-------\Programas\NET\SFTPService\obj\Debug\net8.0\SFTPService.AssemblyInfo.cs
+D:\-------Cosas-------\Programas\NET\SFTPService\obj\Debug\net8.0\SFTPService.csproj.CoreCompileInputs.cache
+D:\-------Cosas-------\Programas\NET\SFTPService\obj\Debug\net8.0\SFTPService.sourcelink.json
+D:\-------Cosas-------\Programas\NET\SFTPService\obj\Debug\net8.0\SFTPService.dll
+D:\-------Cosas-------\Programas\NET\SFTPService\obj\Debug\net8.0\refint\SFTPService.dll
+D:\-------Cosas-------\Programas\NET\SFTPService\obj\Debug\net8.0\SFTPService.pdb
+D:\-------Cosas-------\Programas\NET\SFTPService\obj\Debug\net8.0\ref\SFTPService.dll
