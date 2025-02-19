@@ -1,0 +1,108 @@
+INFO - 19/02/2025 01:24:46 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 19/02/2025 01:24:47 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 19/02/2025 01:24:47 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 19/02/2025 01:24:47 p. m.
+Mensaje:  =========================================== 
+Heineken.SalarioNomina
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:26:00 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:26:27 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.SalarioNomina' exportada a csv con 124623 filas
+Detalles: 
+
+INFO - 19/02/2025 01:26:27 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:26:27 p. m.
+Mensaje:  =========================================== 
+ Heineken.Empleados
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:30:12 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:31:10 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.Empleados' exportada a csv con 376578 filas
+Detalles: 
+
+INFO - 19/02/2025 01:31:10 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:31:10 p. m.
+Mensaje:  =========================================== 
+ Heineken.AreasPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:31:10 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:31:10 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.AreasPersonal' exportada a csv con 357 filas
+Detalles: 
+
+INFO - 19/02/2025 01:31:10 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:31:11 p. m.
+Mensaje:  =========================================== 
+ Heineken.AbsentismosNomina
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:31:39 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:31:44 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.AbsentismosNomina' exportada a csv con 83825 filas
+Detalles: 
+
+INFO - 19/02/2025 01:31:44 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:31:44 p. m.
+Mensaje:  =========================================== 
+ Heineken.vw_CatalogoGlobal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:31:45 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:31:45 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.vw_CatalogoGlobal' exportada a csv con 925 filas
+Detalles: 
+
+INFO - 19/02/2025 01:31:45 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:31:45 p. m.
+Mensaje:  =========================================== 
+ Heineken.MovimientosPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+

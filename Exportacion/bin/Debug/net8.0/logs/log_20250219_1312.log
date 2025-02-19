@@ -1,0 +1,80 @@
+INFO - 19/02/2025 01:12:13 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 19/02/2025 01:12:16 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 19/02/2025 01:12:17 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 19/02/2025 01:12:17 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 19/02/2025 01:12:17 p. m.
+Mensaje:  =========================================== 
+Heineken.SalarioNomina
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:12:45 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:13:09 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.SalarioNomina' exportada a csv con 124623 filas
+Detalles: 
+
+INFO - 19/02/2025 01:13:09 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:13:09 p. m.
+Mensaje:  =========================================== 
+ Heineken.Empleados
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:14:08 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:15:01 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.Empleados' exportada a csv con 376578 filas
+Detalles: 
+
+INFO - 19/02/2025 01:15:01 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:15:01 p. m.
+Mensaje:  =========================================== 
+ Heineken.AreasPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:15:01 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:15:01 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.AreasPersonal' exportada a csv con 357 filas
+Detalles: 
+
+INFO - 19/02/2025 01:15:01 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:15:01 p. m.
+Mensaje:  =========================================== 
+ Heineken.AbsentismosNomina
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:15:05 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+

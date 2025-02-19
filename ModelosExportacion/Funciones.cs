@@ -34,7 +34,7 @@ namespace ModelosExportacion
     static class Funciones
     {
         // Exporta tablas SQL a CSVs a la ruta local
-        public static async Task<RespuestaInterna> ExportCSV(System.Data.DataTable tabla, string NombreTabla, string RutaDestino)
+        public static async Task<RespuestaInterna> ExportCSV(System.Data.DataTable tabla, string NombreTabla, string RutaDestino, string rutaLocal)
         {
             string mensaje = "";
             RespuestaInterna respInt = new RespuestaInterna();
@@ -75,8 +75,7 @@ namespace ModelosExportacion
                         }
 
                         // ----- Configuraciones De CSVs ------
-                        //string ruta = @"C:\Destino";                        
-                        string[] ArchivosCSV = Directory.GetFiles(RutaDestino, "*.csv");
+                        string[] ArchivosCSV = Directory.GetFiles(rutaLocal, "*.csv");
                         var reader = new StreamReader(RutaDestino);
                         var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture));
                         var filas = csv.GetRecords<dynamic>().ToList();

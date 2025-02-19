@@ -117,6 +117,34 @@ namespace ModelosExportacion
 
         }
 
+        public async Task<bool> VerificaBegda(string tabla) {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(this._cadenaConexion.ConnectionString))
+                {
+                    await connection.OpenAsync();
+                    string script = "SELECT COUNT(*) FROM sys.columns WHERE object_id = OBJECT_ID('" + tabla + "') AND name = 'BEGDA'";
 
+                    using (SqlCommand command = new SqlCommand(script, connection))
+                    {
+                        int count = (int)command.ExecuteScalar();
+                        if (count > 0)
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                            
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Error en VerificaBegda(): " + ex.Message);
+            }
+            return false;
+        }
     }
 }

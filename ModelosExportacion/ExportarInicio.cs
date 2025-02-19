@@ -127,21 +127,17 @@ namespace ModelosExportacion
             log = new Log();
         }
   
-        private async Task<RespuestaInterna> ExportarArchivo(string tabla, ConexionBD bd, string RutaExcel, string query)
-        {
-          
-            RespuestaInterna exportacion = new RespuestaInterna();
+        private async Task<RespuestaInterna> ExportarArchivo(string tabla, ConexionBD bd, string RutaCSV, string query, string ubiRutaCarpetaLocal)
+        {          
+            RespuestaInterna exportacion = new RespuestaInterna();           
             Task<RespuestaInterna> respuesta = bd.ejecutScript(query);
 
             if (respuesta.Result.correcto)
             {
-
-                //string contieneBegda = "SELECT COUNT(*) FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = @TableName AND COLUMN_NAME = @ColumnName";
-
                 Console.WriteLine("Exportando tabla");
                 log.Escribe(LogType.INFO, "Exportando tabla", "Exportacion de Informacion");
 
-                exportacion = await Funciones.ExportCSV(respuesta.Result.tabla, tabla, RutaExcel);
+                exportacion = await Funciones.ExportCSV(respuesta.Result.tabla, tabla, RutaCSV, ubiRutaCarpetaLocal);
 
                 log.Escribe(LogType.INFO, exportacion.mensaje, exportacion.detalle);
             }
@@ -219,18 +215,28 @@ namespace ModelosExportacion
                     {
                         string NombreTabla = tabla.Trim();
                         string mensaje = "";
-                        string where = " Where BEGDA >= '" + this.dteFechaFiltro + "'";
                         string RutaCSV = ubiRutaCarpetaLocal + "\\" + NombreTabla + ".csv";
-                        string query = "Select * from " + tabla.Trim();
+                        string query = "SELECT * FROM " + tabla.Trim();
+                        string where = " WHERE BEGDA >= '" + this.dteFechaFiltro + "'";
 
                         Console.WriteLine("===========================================");
                         Console.WriteLine("      " + tabla);
                         Console.WriteLine("===========================================");
                         log.Escribe(LogType.INFO, " =========================================== \n" + tabla + "\n =========================================== ", "Procesando la tabla");
 
-                        // Se manda a ejecutar el query para la obtener la informacion de la tabla                        
-                        RespuestaInterna exportacion = new RespuestaInterna();
-                        exportacion = ExportarArchivo(tabla.Trim(), bd, RutaCSV, query).Result;
+                        // Se manda a ejecutar el query para obtener la informacion de la tabla
+                        // El query puede o no llevar clavado un where en base a la columna begda
+                        bool contieneBegda = await bd.VerificaBegda(tabla);
+                        if (contieneBegda)
+                        {
+                            RespuestaInterna exportacion = new RespuestaInterna();
+                            exportacion = ExportarArchivo(tabla.Trim(), bd, RutaCSV, query+where, ubiRutaCarpetaLocal).Result;
+                        }
+                        else
+                        {
+                            RespuestaInterna exportacion = new RespuestaInterna();
+                            exportacion = ExportarArchivo(tabla.Trim(), bd, RutaCSV, query, ubiRutaCarpetaLocal).Result;
+                        }
 
                         Console.WriteLine("===========================================");
                         log.Escribe(LogType.INFO, " ===========================================", "");
@@ -275,8 +281,6 @@ namespace ModelosExportacion
 
         public void ExportarArchivosAsyncToSQL()
         {
-            Console.Clear();
-
             Console.WriteLine("       Inicia Proceso de Exportacion a SQL!");
             Console.WriteLine("Fecha Inicio:  " + DateTime.Now.ToString());
             Console.WriteLine("==============================================================");

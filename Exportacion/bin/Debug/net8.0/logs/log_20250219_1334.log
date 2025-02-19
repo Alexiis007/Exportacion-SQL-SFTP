@@ -1,0 +1,488 @@
+INFO - 19/02/2025 01:34:09 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar archivos
+
+INFO - 19/02/2025 01:34:09 p. m.
+Mensaje: == Prueba de conexion BD Exitosa == 
+Detalles: Se conecto a SQL de manera correcta
+
+INFO - 19/02/2025 01:34:09 p. m.
+Mensaje: Limpieza del directorio C:\Destino exitosa
+Detalles: 
+
+INFO - 19/02/2025 01:34:09 p. m.
+Mensaje:  =========================================== 
+Heineken.SalarioNomina
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:34:41 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:35:05 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.SalarioNomina' exportada a csv con 124623 filas
+Detalles: 
+
+INFO - 19/02/2025 01:35:05 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:35:05 p. m.
+Mensaje:  =========================================== 
+ Heineken.Empleados
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:36:03 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:37:00 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.Empleados' exportada a csv con 376578 filas
+Detalles: 
+
+INFO - 19/02/2025 01:37:00 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:37:00 p. m.
+Mensaje:  =========================================== 
+ Heineken.AreasPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:37:00 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:37:00 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.AreasPersonal' exportada a csv con 357 filas
+Detalles: 
+
+INFO - 19/02/2025 01:37:00 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:37:00 p. m.
+Mensaje:  =========================================== 
+ Heineken.AbsentismosNomina
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:37:06 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:37:12 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.AbsentismosNomina' exportada a csv con 83825 filas
+Detalles: 
+
+INFO - 19/02/2025 01:37:12 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:37:12 p. m.
+Mensaje:  =========================================== 
+ Heineken.vw_CatalogoGlobal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:37:13 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:37:13 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.vw_CatalogoGlobal' exportada a csv con 925 filas
+Detalles: 
+
+INFO - 19/02/2025 01:37:13 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:37:13 p. m.
+Mensaje:  =========================================== 
+ Heineken.MovimientosPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:37:33 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:38:00 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.MovimientosPersonal' exportada a csv con 484962 filas
+Detalles: 
+
+INFO - 19/02/2025 01:38:00 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:38:00 p. m.
+Mensaje:  =========================================== 
+ Heineken.IncidenciasPresencias
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:38:38 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:39:44 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.IncidenciasPresencias' exportada a csv con 938765 filas
+Detalles: 
+
+INFO - 19/02/2025 01:39:44 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:39:44 p. m.
+Mensaje:  =========================================== 
+ dbo.DatosReales_K
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:39:45 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:39:46 p. m.
+Mensaje: ExportToCSV: Tabla 'dbo.DatosReales_K' exportada a csv con 44050 filas
+Detalles: 
+
+INFO - 19/02/2025 01:39:46 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:39:46 p. m.
+Mensaje:  =========================================== 
+ dbo.DatosMetas_K
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:39:47 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:39:48 p. m.
+Mensaje: ExportToCSV: Tabla 'dbo.DatosMetas_K' exportada a csv con 44050 filas
+Detalles: 
+
+INFO - 19/02/2025 01:39:48 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:39:48 p. m.
+Mensaje:  =========================================== 
+ Heineken.CentrosCosto
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:39:49 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:39:50 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.CentrosCosto' exportada a csv con 15172 filas
+Detalles: 
+
+INFO - 19/02/2025 01:39:50 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:39:50 p. m.
+Mensaje:  =========================================== 
+ Heineken.UnidadesOrganizativas
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:39:50 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:39:50 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.UnidadesOrganizativas' exportada a csv con 5249 filas
+Detalles: 
+
+INFO - 19/02/2025 01:39:50 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:39:50 p. m.
+Mensaje:  =========================================== 
+ Heineken.Posiciones
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:39:55 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:39:57 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.Posiciones' exportada a csv con 49503 filas
+Detalles: 
+
+INFO - 19/02/2025 01:39:57 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:39:57 p. m.
+Mensaje:  =========================================== 
+ Heineken.ClasesMedida
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:39:57 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:39:57 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.ClasesMedida' exportada a csv con 182 filas
+Detalles: 
+
+INFO - 19/02/2025 01:39:57 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:39:57 p. m.
+Mensaje:  =========================================== 
+ Heineken.Funciones
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:39:57 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:39:58 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.Funciones' exportada a csv con 151 filas
+Detalles: 
+
+INFO - 19/02/2025 01:39:58 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:39:58 p. m.
+Mensaje:  =========================================== 
+ Heineken.MotivosMedida
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:39:58 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:39:58 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.MotivosMedida' exportada a csv con 235 filas
+Detalles: 
+
+INFO - 19/02/2025 01:39:58 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:39:58 p. m.
+Mensaje:  =========================================== 
+ Heineken.DivisionesPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:39:58 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:39:58 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.DivisionesPersonal' exportada a csv con 12 filas
+Detalles: 
+
+INFO - 19/02/2025 01:39:58 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:39:58 p. m.
+Mensaje:  =========================================== 
+ Heineken.Sociedades
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:39:58 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:39:58 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.Sociedades' exportada a csv con 12 filas
+Detalles: 
+
+INFO - 19/02/2025 01:39:58 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:39:58 p. m.
+Mensaje:  =========================================== 
+ Heineken.SubdivisionesPersonal
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:39:59 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:39:59 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.SubdivisionesPersonal' exportada a csv con 848 filas
+Detalles: 
+
+INFO - 19/02/2025 01:39:59 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:39:59 p. m.
+Mensaje:  =========================================== 
+ dbo.DatosReales 
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:40:08 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:40:14 p. m.
+Mensaje: ExportToCSV: Tabla 'dbo.DatosReales' exportada a csv con 295502 filas
+Detalles: 
+
+INFO - 19/02/2025 01:40:14 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:40:14 p. m.
+Mensaje:  =========================================== 
+ dbo.DatosMetas 
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:40:29 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:40:35 p. m.
+Mensaje: ExportToCSV: Tabla 'dbo.DatosMetas' exportada a csv con 272640 filas
+Detalles: 
+
+INFO - 19/02/2025 01:40:35 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:40:35 p. m.
+Mensaje:  =========================================== 
+ dbo.EquiposIntegrantesTrimestral
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:40:36 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:40:36 p. m.
+Mensaje: ExportToCSV: Tabla 'dbo.EquiposIntegrantesTrimestral' exportada a csv con 2302 filas
+Detalles: 
+
+INFO - 19/02/2025 01:40:36 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:40:36 p. m.
+Mensaje:  =========================================== 
+ dbo.ResultadosJefesEmpleadosEquiposMensual
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:40:36 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:40:37 p. m.
+Mensaje: ExportToCSV: Tabla 'dbo.ResultadosJefesEmpleadosEquiposMensual' exportada a csv con 2673 filas
+Detalles: 
+
+INFO - 19/02/2025 01:40:37 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:40:37 p. m.
+Mensaje:  =========================================== 
+ dbo.ResultadosJefesEmpleadosAnual
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:40:37 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:40:37 p. m.
+Mensaje: ExportToCSV: Tabla 'dbo.ResultadosJefesEmpleadosAnual' exportada a csv con 3543 filas
+Detalles: 
+
+INFO - 19/02/2025 01:40:37 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:40:37 p. m.
+Mensaje:  =========================================== 
+ dbo.ResultadosEquiposTrimestral
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:40:38 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:40:38 p. m.
+Mensaje: ExportToCSV: Tabla 'dbo.ResultadosEquiposTrimestral' exportada a csv con 1620 filas
+Detalles: 
+
+INFO - 19/02/2025 01:40:38 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:40:38 p. m.
+Mensaje:  =========================================== 
+ dbo.EquiposIntegrantesMensual
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:40:38 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:40:38 p. m.
+Mensaje: ExportToCSV: Tabla 'dbo.EquiposIntegrantesMensual' exportada a csv con 2420 filas
+Detalles: 
+
+INFO - 19/02/2025 01:40:38 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:40:38 p. m.
+Mensaje:  =========================================== 
+ Heineken.IncidenciasAusentismos
+ =========================================== 
+Detalles: Procesando la tabla
+
+INFO - 19/02/2025 01:40:41 p. m.
+Mensaje: Exportando tabla
+Detalles: Exportacion de Informacion
+
+INFO - 19/02/2025 01:40:46 p. m.
+Mensaje: ExportToCSV: Tabla 'Heineken.IncidenciasAusentismos' exportada a csv con 83823 filas
+Detalles: 
+
+INFO - 19/02/2025 01:40:46 p. m.
+Mensaje:  ===========================================
+Detalles: 
+
+INFO - 19/02/2025 01:40:46 p. m.
+Mensaje: Fecha Termino:  19/02/2025 01:40:46 p. m.
+Detalles: Proceso Terminado
+
+INFO - 19/02/2025 01:40:46 p. m.
+Mensaje: Inicia Proceso de Exportacion!
+Detalles: Exportar Data
+
