@@ -44,11 +44,8 @@ namespace ModelosExportacion
         private int sftpPuerto_ICMCOMCatorcenalHeinekenQA_SFTP;
 
         private string strTablasExportar;
-        private int intMaximoRegistros;
-        private string strIronLicenseKey;
+        private int intMaximoRegistros;      
         private string dteFechaFiltro;
-
-
 
         private string ubiRutaCarpetaLocal;
         private string ubiRutaCarpetaDestino;
@@ -56,13 +53,12 @@ namespace ModelosExportacion
         private string ubiRutaCarpetaDestinoTablasToSQL;
         private string ubiRutaCarpetaOrigenTablasToSQL;
 
-        private Log log;
-
         private SftpConfig ICMMNFHeinekenQA_SFTP;
         private SftpConfig ICMCOMHeinekenQA_SFTP;
         private SftpConfig ICMCOMCatorcenalHeinekenQA_SFTP;
-        Encoder encoder = new Encoder();
 
+        private Log log;
+        Encoder encoder = new Encoder();        
 
         public ExportarInicio(configuracionesAppSettings config)
         {
@@ -330,7 +326,7 @@ namespace ModelosExportacion
 
         }
 
-        public async Task ExportarArchivosAsyncToSQL()
+        public void ExportarArchivosAsyncToSQL()
         {
             Console.Clear();
 
@@ -342,12 +338,12 @@ namespace ModelosExportacion
 
             LimpiarDirectorio(ubiRutaCarpetaDestinoTablasToSQL, ".csv");
 
-            // Descarga archivos de SFTP Manufactura
-            await Funciones.DownloadCSV(ubiRutaCarpetaOrigenTablasToSQL, ubiRutaCarpetaDestinoTablasToSQL, ICMMNFHeinekenQA_SFTP, "TablasManufacturaToSQL");
-            // Descarga archivos de SFTP Quincenal
-            await Funciones.DownloadCSV(ubiRutaCarpetaOrigenTablasToSQL, ubiRutaCarpetaDestinoTablasToSQL, ICMCOMHeinekenQA_SFTP, "TablasQuincenalToSQL");
-            // Descarga archivos de SFTP Catorcenal
-            await Funciones.DownloadCSV(ubiRutaCarpetaOrigenTablasToSQL, ubiRutaCarpetaDestinoTablasToSQL, ICMCOMCatorcenalHeinekenQA_SFTP, "TablasCatorcenalToSQL");
+            // Descarga archivos de SFTP Modelo Manufactura
+            Funciones.DownloadCSV(ubiRutaCarpetaOrigenTablasToSQL, ubiRutaCarpetaDestinoTablasToSQL, ICMMNFHeinekenQA_SFTP, "TablasManufacturaToSQL");
+            // Descarga archivos de SFTP Modelo Quincenal
+            Funciones.DownloadCSV(ubiRutaCarpetaOrigenTablasToSQL, ubiRutaCarpetaDestinoTablasToSQL, ICMCOMHeinekenQA_SFTP, "TablasQuincenalToSQL");
+            // Descarga archivos de SFTP Modelo Catorcenal
+            Funciones.DownloadCSV(ubiRutaCarpetaOrigenTablasToSQL, ubiRutaCarpetaDestinoTablasToSQL, ICMCOMCatorcenalHeinekenQA_SFTP, "TablasCatorcenalToSQL");
 
             Console.WriteLine("==============================================================");
             Console.WriteLine("Procesando los archivos descargados para la exportacion a SQL.");
