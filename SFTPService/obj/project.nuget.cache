@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "4qB11hoYPLY=",
+  "dgSpecHash": "7ECuL3QpUJM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\PARAMF01\\Desktop\\Migracion\\Repo\\SFTPService\\SFTPService.csproj",
+  "projectFilePath": "D:\\-------Cosas-------\\Programas\\NET\\SFTPService\\SFTPService.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\PARAMF01\\.nuget\\packages\\bouncycastle.cryptography\\2.4.0\\bouncycastle.cryptography.2.4.0.nupkg.sha512",
-    "C:\\Users\\PARAMF01\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
-    "C:\\Users\\PARAMF01\\.nuget\\packages\\ssh.net\\2024.2.0\\ssh.net.2024.2.0.nupkg.sha512"
+    "C:\\Users\\Alexsis007\\.nuget\\packages\\bouncycastle.cryptography\\2.4.0\\bouncycastle.cryptography.2.4.0.nupkg.sha512",
+    "C:\\Users\\Alexsis007\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
+    "C:\\Users\\Alexsis007\\.nuget\\packages\\ssh.net\\2024.2.0\\ssh.net.2024.2.0.nupkg.sha512"
   ],
   "logs": []
 }

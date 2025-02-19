@@ -131,11 +131,13 @@ namespace ModelosExportacion
         {
           
             RespuestaInterna exportacion = new RespuestaInterna();
-
             Task<RespuestaInterna> respuesta = bd.ejecutScript(query);
 
             if (respuesta.Result.correcto)
             {
+
+                //string contieneBegda = "SELECT COUNT(*) FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = @TableName AND COLUMN_NAME = @ColumnName";
+
                 Console.WriteLine("Exportando tabla");
                 log.Escribe(LogType.INFO, "Exportando tabla", "Exportacion de Informacion");
 
@@ -149,7 +151,7 @@ namespace ModelosExportacion
                 exportacion.mensaje = respuesta.Result.mensaje;
                 exportacion.detalle = respuesta.Result.detalle;
 
-                Console.WriteLine(respuesta.Result.mensaje);
+                Console.WriteLine("Error al consultar la tabla: " + respuesta.Result.mensaje);
                 log.Escribe(LogType.ERROR, respuesta.Result.mensaje, "");
             }
 
@@ -186,7 +188,7 @@ namespace ModelosExportacion
             return limpiado;
         }
 
-        public async Task  ExportarArchivosAsyncToSFTP()
+        public async Task ExportarArchivosAsyncToSFTP()
         {
             Console.Clear();
 
@@ -204,7 +206,6 @@ namespace ModelosExportacion
                 Console.WriteLine(" == Prueba de conexion BD Exitosa == ");
                 log.Escribe(LogType.INFO, "== Prueba de conexion BD Exitosa == ", "Se conecto a SQL de manera correcta");
 
-
                 RespuestaInterna exportacion_limpieza = new RespuestaInterna();
                 exportacion_limpieza = LimpiarDirectorio(ubiRutaCarpetaLocal);
                 
@@ -217,73 +218,19 @@ namespace ModelosExportacion
                     foreach (String tabla in tablas)
                     {
                         string NombreTabla = tabla.Trim();
-                        string query = "";
                         string mensaje = "";
                         string where = " Where BEGDA >= '" + this.dteFechaFiltro + "'";
-                        string RutaExcel = ubiRutaCarpetaLocal + "\\" + NombreTabla + ".csv";
-                        query = "Select Filas = count(*) from " + tabla.Trim();
+                        string RutaCSV = ubiRutaCarpetaLocal + "\\" + NombreTabla + ".csv";
+                        string query = "Select * from " + tabla.Trim();
 
                         Console.WriteLine("===========================================");
                         Console.WriteLine("      " + tabla);
                         Console.WriteLine("===========================================");
                         log.Escribe(LogType.INFO, " =========================================== \n" + tabla + "\n =========================================== ", "Procesando la tabla");
 
-                        // Se manda a ejecutar el query para la obtener la informacion de la tabla
-                        Task<RespuestaInterna> respuesta_count = bd.ejecutScript(query);
+                        // Se manda a ejecutar el query para la obtener la informacion de la tabla                        
                         RespuestaInterna exportacion = new RespuestaInterna();
-
-                        // se valida si fue exitosa la obtención de información
-                        if (respuesta_count.Result.correcto)
-                        {
-                            int filas = int.Parse(respuesta_count.Result.tabla.Rows[0]["Filas"].ToString());
-
-                            // se valida si la cantidad de registros excede el limite configurado para exportar
-                            if (filas > this.intMaximoRegistros)
-                            {
-                                mensaje = "Las tabla contiene: " + filas + " filas.  Excede el limite permitido :" + this.intMaximoRegistros.ToString() + ". Se filtrara información.";
-
-                                Console.WriteLine(mensaje);
-                                log.Escribe(LogType.INFO, mensaje, "Exceso de información a exportar");
-
-                                // Se filtrar la tabla en base a la fecha BEGDA configurada y se ejecuta nuevamente el query
-                                query = "Select * from " + tabla.Trim() + where;
-                                Task<RespuestaInterna> respuesta_where = bd.ejecutScript(query);
-
-                                // se valida si la consulta fue ejecutada correctamente
-                                if (respuesta_where.Result.correcto)
-                                {
-                                    filas = respuesta_where.Result.tabla.Rows.Count;
-                                    // se valida nuevamente si la cantidad de filas excede el limite configurado
-                                    if (filas > this.intMaximoRegistros)
-                                    {
-                                        // si las excede no genera el archivo para la tabla soliciada
-                                        mensaje = "Las tabla contiene: " + filas + " filas.  Excede el limite permitido :" + this.intMaximoRegistros.ToString() + ". Se excluira la tabla del proceso.";
-                                        Console.WriteLine(mensaje);
-                                        log.Escribe(LogType.INFO, mensaje, "Exceso de información a exportar");
-
-                                        exportacion.correcto = false;
-                                        exportacion.mensaje = mensaje;
-                                    }
-                                    else
-                                    {    
-                                        // Si no excede genera el archivo para la tabla solicitada
-                                        exportacion = ExportarArchivo(tabla.Trim(), bd, RutaExcel, query).Result;
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                // Genera el archivo para la tabla solicitada
-                                query = "Select * from " + tabla.Trim();
-                                exportacion = ExportarArchivo(tabla.Trim(), bd, RutaExcel, query).Result;
-                            }
-                        }
-                        else
-                        {
-                            Console.WriteLine(respuesta_count.Result.mensaje);
-                            log.Escribe(LogType.ERROR, respuesta_count.Result.mensaje, "Error al consultar la tabla");
-                        }
-
+                        exportacion = ExportarArchivo(tabla.Trim(), bd, RutaCSV, query).Result;
 
                         Console.WriteLine("===========================================");
                         log.Escribe(LogType.INFO, " ===========================================", "");

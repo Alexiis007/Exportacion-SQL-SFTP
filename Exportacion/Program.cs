@@ -72,7 +72,11 @@ namespace Exportacion
             await exp.ExportarArchivosAsyncToSFTP();
 
             // Proceso Exportacion Varicent To SQL
+<<<<<<< HEAD
             exp.ExportarArchivosAsyncToSQL();
+=======
+            //await exp.ExportarArchivosAsyncToSQL();
+>>>>>>> 110a93f0ddff59581a9aad38d4846cb77ac68682
         }
     
     }
