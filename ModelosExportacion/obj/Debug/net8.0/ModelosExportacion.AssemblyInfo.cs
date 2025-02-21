@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ModelosExportacion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79c8484abf203c9c3cc05c20ffc62de08eea325b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72d656873d1a004d9cd0c20c3ad672309c54d0bf")]
 [assembly: System.Reflection.AssemblyProductAttribute("ModelosExportacion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ModelosExportacion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -28,6 +28,11 @@ namespace ModelosExportacion
         private string bdcnUsuario;
         private string bdcnContraseña;
 
+        private string bdcnServer_SFTPToSQL;
+        private string bdcnBD_SFTPToSQL;
+        private string bdcnUsuario_SFTPToSQL;
+        private string bdcnContraseña_SFTPToSQL;
+
         private string sftpServer_ICMCOMHeinekenQA_SFTP;
         private string sftpUsuario_ICMCOMHeinekenQA_SFTP;
         private string sftpContraseña_ICMCOMHeinekenQA_SFTP;
@@ -43,8 +48,7 @@ namespace ModelosExportacion
         private string sftpContraseña_ICMCOMCatorcenalHeinekenQA_SFTP;
         private int sftpPuerto_ICMCOMCatorcenalHeinekenQA_SFTP;
 
-        private string strTablasExportar;
-        private int intMaximoRegistros;      
+        private string strTablasExportar;  
         private string dteFechaFiltro;
 
         private string ubiRutaCarpetaLocal;
@@ -67,6 +71,12 @@ namespace ModelosExportacion
             this.bdcnBD = encoder.DesEncriptarBase64(config.bdcnBD);
             this.bdcnUsuario = encoder.DesEncriptarBase64(config.bdcnUsuario);
             this.bdcnContraseña = encoder.DesEncriptarBase64(config.bdcnContraseña);
+
+            //Informacion SQL-BD donde se incertara la data proveniente de varicent
+            this.bdcnServer_SFTPToSQL = encoder.DesEncriptarBase64(config.bdcnServer_SFTPToSQL);
+            this.bdcnBD_SFTPToSQL = encoder.DesEncriptarBase64(config.bdcnBD_SFTPToSQL);
+            this.bdcnUsuario_SFTPToSQL = encoder.DesEncriptarBase64(config.bdcnUsuario_SFTPToSQL);
+            this.bdcnContraseña_SFTPToSQL = encoder.DesEncriptarBase64(config.bdcnContraseña_SFTPToSQL);
 
             //Ubicacion local de las tablas y ubicacion destino de los modelos de varicent (SQL to Varicent)
             this.ubiRutaCarpetaLocal = config.ubiRutaCarpetaLocalExcel;
@@ -93,7 +103,6 @@ namespace ModelosExportacion
             this.sftpContraseña_ICMCOMCatorcenalHeinekenQA_SFTP = encoder.DesEncriptarBase64(config.sftpcnContraseña_ICMCOMCatorcenalHeinekenQA_SFTP);
             this.sftpPuerto_ICMCOMCatorcenalHeinekenQA_SFTP = int.Parse(encoder.DesEncriptarBase64(config.sftpcnPuerto_ICMCOMCatorcenalHeinekenQA_SFTP));
 
-            this.intMaximoRegistros = config.intMaximoRegistros;
             this.dteFechaFiltro = config.dteFechaFiltro;
 
             //Ubicacion remota de las tablas y ubicacion destino de la carpeta contenedora local (Varicent to SQL)
@@ -301,7 +310,7 @@ namespace ModelosExportacion
             Console.WriteLine("==============================================================");
 
             // Se procesan CSV para despues ser migrados por BulkCopy a la BD de SQL
-            Funciones.CSVToQuery(ubiRutaCarpetaDestinoTablasToSQL, bdcnServer, bdcnBD, bdcnUsuario, bdcnContraseña);
+            Funciones.CSVToQuery(ubiRutaCarpetaDestinoTablasToSQL, bdcnServer_SFTPToSQL, bdcnBD_SFTPToSQL, bdcnUsuario_SFTPToSQL, bdcnContraseña_SFTPToSQL);
         }
     }
 }

@@ -9,10 +9,17 @@ namespace ModelosExportacion
 {
     public  class configuracionesAppSettings
     {
+        //Informacion SQL-BD donde se extrae la data para varicent
         public string bdcnServer { set; get; }
         public string bdcnBD { set; get; }
         public string bdcnUsuario { set; get; }
         public string bdcnContraseña { set; get; }
+
+        //Informacion SQL-BD donde se incertara la data proveniente de varicent
+        public string bdcnServer_SFTPToSQL { set; get; }
+        public string bdcnBD_SFTPToSQL { set; get; }
+        public string bdcnUsuario_SFTPToSQL { set; get; }
+        public string bdcnContraseña_SFTPToSQL { set; get; }
 
         //public string bdspSLValida { set; get; }
 

@@ -35,6 +35,12 @@ namespace Exportacion
             config.bdcnUsuario = _config.obtenerParametros("ConnectionString", "bdcnUsuario");
             config.bdcnContraseña = _config.obtenerParametros("ConnectionString", "bdcnContraseña");
 
+            //Informacion SQL-BD donde se incertara la data proveniente de varicent
+            config.bdcnServer_SFTPToSQL = _config.obtenerParametros("ConnectionStringBD_SFTPToSQL", "bdcnServer");
+            config.bdcnBD_SFTPToSQL = _config.obtenerParametros("ConnectionStringBD_SFTPToSQL", "bdcnBD");
+            config.bdcnUsuario_SFTPToSQL = _config.obtenerParametros("ConnectionStringBD_SFTPToSQL", "bdcnUsuario");
+            config.bdcnContraseña_SFTPToSQL = _config.obtenerParametros("ConnectionStringBD_SFTPToSQL", "bdcnContraseña");
+
             // Modelo 1 ICMMNFHeinekenQA_SFTP
             config.sftpcnServer_ICMMNFHeinekenQA_SFTP = _config.obtenerParametros("ICMMNFHeinekenQA_SFTP", "sftpServer");
             config.sftpcnUsuario_ICMMNFHeinekenQA_SFTP = _config.obtenerParametros("ICMMNFHeinekenQA_SFTP", "sftpUsuario");
@@ -53,9 +59,10 @@ namespace Exportacion
             config.sftpcnContraseña_ICMCOMCatorcenalHeinekenQA_SFTP = _config.obtenerParametros("ICMCOMCatorcenalHeinekenQA_SFTP", "sftpContraseña");
             config.sftpcnPuerto_ICMCOMCatorcenalHeinekenQA_SFTP = _config.obtenerParametros("ICMCOMCatorcenalHeinekenQA_SFTP", "sftpPuerto");
 
-            //Tablas que se necesitan extraer de SQL-BD para varicent
+            //Tablas que se necesitan extraer de SQL-BD para varicent 
             config.strTablasExportar = _config.obtenerParametros("Informacion", "Tablas");
-            config.intMaximoRegistros = int.Parse(_config.obtenerParametros("Informacion", "MaximoRegistros"));
+
+            //Fecha filtro para reducir cantidad de datos en tablas con la columna Begda 
             config.dteFechaFiltro = _config.obtenerParametros("Informacion", "FechaFiltro");
 
             //Ubicacion local de las tablas y ubicacion destino de los modelos de varicent (SQL to Varicent)
